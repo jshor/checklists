@@ -119,18 +119,20 @@ export function useChecklist() {
       }))
     },
 
-    /** Appends an empty section. */
+    /** Appends an empty section and focuses its title (which scrolls it into view). */
     addSection: () => {
-      return setBlocks(bs => {
-        return [...bs, { id: nextId++, type: 'section', title: 'SECTION', items: [] }]
-      })
+      const id = nextId++
+
+      setBlocks(bs => [...bs, { id, type: 'section', title: 'SECTION', items: [] }])
+      return focus(`title-${id}`)
     },
 
-    /** Appends a column-width image. */
+    /** Appends a column-width image and focuses it (which scrolls it into view). */
     addImage: (src: string, ratio: number) => {
-      return setBlocks(bs => {
-        return [...bs, { id: nextId++, type: 'image', src, ratio, wide: false }]
-      })
+      const id = nextId++
+
+      setBlocks(bs => [...bs, { id, type: 'image', src, ratio, wide: false }])
+      return focus(`image-${id}`)
     },
 
     /** Deletes a section or image. */

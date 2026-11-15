@@ -165,6 +165,7 @@ describe('useChecklist', () => {
     const added = result.current.blocks.at(-1)!
 
     expect(added).toMatchObject({ type: 'section', title: 'SECTION', items: [] })
+    expect(result.current.focusId).toBe(`title-${added.id}`)
 
     act(() => result.current.removeBlock(added.id))
 
@@ -201,6 +202,7 @@ describe('useChecklist', () => {
     const img = result.current.blocks.at(-1)!
 
     expect(img).toMatchObject({ type: 'image', src: 'data:x', ratio: 0.5, wide: false })
+    expect(result.current.focusId).toBe(`image-${img.id}`)
 
     act(() => result.current.toggleWide(img.id))
 
