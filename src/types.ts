@@ -1,3 +1,5 @@
+import type { useChecklist } from './store'
+
 /** A checklist line: a label/value pair, or a centered note. */
 export type Item = {
   /** Unique id, also used as the drag-and-drop id. */
@@ -96,3 +98,29 @@ export type JsonChecklist = {
   /** Blocks in flow order. */
   blocks: JsonBlock[]
 }
+
+/** The undoable part of the checklist. */
+export type Doc = {
+  /** Document title. */
+  title: string
+  /** Left, center and right footer texts. */
+  footer: string[]
+  /** Blocks in flow order. */
+  blocks: Block[]
+}
+
+/** Undo history. */
+export type History = {
+  /** Earlier docs, oldest first. */
+  past: Doc[]
+  /** The current doc. */
+  present: Doc
+  /** Undone docs to redo, next first. */
+  future: Doc[]
+}
+
+/** A new value, or a function from the old value to the new one. */
+export type Update<T> = T | ((value: T) => T)
+
+/** The checklist state and actions shared with components through context. */
+export type Store = ReturnType<typeof useChecklist>

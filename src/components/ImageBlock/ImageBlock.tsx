@@ -1,4 +1,5 @@
 import { FoldHorizontal, Trash2, UnfoldHorizontal } from 'lucide-react'
+import { ARROW_KEYS } from '../../constants'
 import { useStore } from '../../store'
 import type { Placed } from '../../types'
 import Arrows from '../Arrows/Arrows'
@@ -12,8 +13,6 @@ export const imageUrl = (src: string) => {
   return src.startsWith('<') ? `data:image/svg+xml,${encodeURIComponent(src)}` : src
 }
 
-const arrowKeys: Record<string, -1 | 1> = { ArrowUp: -1, ArrowDown: 1 }
-
 /**
  * Renders an image with a section-like frame.
  */
@@ -24,7 +23,7 @@ export default function ImageBlock({ img, h }: Placed) {
     <div className="image-block" tabIndex={0} data-focus={`image-${img.id}`}
       style={{ height: h, backgroundImage: `url("${imageUrl(img.src)}")` }}
       onKeyDown={e => {
-        const dir = arrowKeys[e.key]
+        const dir = ARROW_KEYS[e.key]
 
         if (!dir || e.target !== e.currentTarget) return
 

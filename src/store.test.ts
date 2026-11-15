@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { act, renderHook } from '@testing-library/react'
 import b38m from './checklists/B38M.json'
-import { DEFAULT_FOOTER, DEFAULT_TITLE, fromJson, toJson, useChecklist } from './store'
+import { DEFAULT_FOOTER, DEFAULT_TITLE } from './constants'
+import { fromJson, toJson, useChecklist } from './store'
 import type { JsonChecklist, Section } from './types'
 
 const checklist = b38m as JsonChecklist
@@ -79,6 +80,69 @@ describe('useChecklist', () => {
 
     expect(result.current.title).toBe(DEFAULT_TITLE)
     expect(result.current.footer).toEqual(DEFAULT_FOOTER)
+  })
+
+  it('undoes and redoes changes to blocks, title and footer', () => {
+    const { result } = setup()
+    const original = result.current.blocks
+
+    expect(result.current.canUndo).toBe(false)
+
+    act(() => result.current.addSection())
+    act(() => result.current.setDocTitle('T'))
+    act(() => result.current.setFooterText(0, 'F'))
+    act(() => result.current.undo())
+
+    expect(result.current.footer[0]).not.toBe('F')
+    expect(result.current.title).toBe('T')
+
+    act(() => result.current.undo())
+    act(() => result.current.undo())
+
+    expect(result.current.blocks).toBe(original)
+    expect(result.current.canUndo).toBe(false)
+    expect(result.current.canRedo).toBe(true)
+
+    act(() => result.current.redo())
+
+    expect(result.current.blocks).toHaveLength(original.length + 1)
+  })
+
+  it('clears redo after a new change', () => {
+    const { result } = setup()
+
+    act(() => result.current.addSection())
+    act(() => result.current.undo())
+    act(() => result.current.setDocTitle('T'))
+
+    expect(result.current.canRedo).toBe(false)
+  })
+
+  it('adds no undo step for changes that change nothing', () => {
+    const { result } = setup()
+
+    act(() => result.current.move(result.current.blocks[0].id, -1))
+
+    expect(result.current.canUndo).toBe(false)
+  })
+
+  it('ignores undo and redo with no history', () => {
+    const { result } = setup()
+    const before = result.current.blocks
+
+    act(() => result.current.undo())
+    act(() => result.current.redo())
+
+    expect(result.current.blocks).toBe(before)
+  })
+
+  it('starts a fresh history on load', () => {
+    const { result } = setup()
+
+    act(() => result.current.addSection())
+    act(() => result.current.load({ blocks: [] }))
+
+    expect(result.current.canUndo).toBe(false)
   })
 
   it('adds and removes sections', () => {

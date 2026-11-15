@@ -1,6 +1,8 @@
 import { createContext, useContext, useState } from 'react'
 import { arrayMove } from '@dnd-kit/sortable'
-import type { Block, Item, JsonBlock, JsonChecklist, Section } from './types'
+import { DEFAULT_FOOTER, DEFAULT_TITLE } from './constants'
+import { change } from './utils/history'
+import type { Block, Doc, History, Item, JsonBlock, JsonChecklist, Section, Store, Update } from './types'
 
 let nextId = 1
 
@@ -40,18 +42,22 @@ export const toJson = ({ title, footer, blocks }: { title: string; footer: strin
   return JSON.stringify(json, null, 2)
 }
 
-/** Title for a checklist that does not specify one. */
-export const DEFAULT_TITLE = 'Untitled Checklist'
-
-/** Footer texts for a checklist that does not specify any. */
-export const DEFAULT_FOOTER = ['Aircraft', 'For Flight Simulation Only.', 'Page {n} of {m}']
+const fresh = (doc: Doc): History => ({ past: [], present: doc, future: [] })
 
 export function useChecklist() {
-  const [blocks, setBlocks] = useState<Block[]>([])
-  const [title, setDocTitle] = useState(DEFAULT_TITLE)
-  const [footer, setFooter] = useState(DEFAULT_FOOTER)
+  const [history, setHistory] = useState(() => fresh({ title: DEFAULT_TITLE, footer: DEFAULT_FOOTER, blocks: [] }))
+  const { title, footer, blocks } = history.present
   const [focusId, focus] = useState<string | null>(null) // data-focus of an element to focus after render
   const [dragId, setDragId] = useState<number | null>(null)
+
+  /** Returns a setter that updates one doc field as an undo step. */
+  const setter = <K extends keyof Doc>(key: K) => {
+    return (update: Update<Doc[K]>) => setHistory(h => change(h, key, update))
+  }
+  
+  const setBlocks = setter('blocks')
+  const setFooter = setter('footer')
+  const setDocTitle = setter('title')
 
   /** Replaces a section's items with the result of fn. */
   const mapItems = (sid: number, fn: (items: Item[]) => Item[]) => {
@@ -64,6 +70,26 @@ export function useChecklist() {
 
   return {
     blocks, title, footer, focusId,
+    canUndo: history.past.length > 0,
+    canRedo: history.future.length > 0,
+
+    /** Restores the previous doc. */
+    undo: () => {
+      return setHistory(h => {
+        if (!h.past.length) return h
+
+        return { past: h.past.slice(0, -1), present: h.past.at(-1)!, future: [h.present, ...h.future] }
+      })
+    },
+
+    /** Restores the last undone doc. */
+    redo: () => {
+      return setHistory(h => {
+        if (!h.future.length) return h
+
+        return { past: [...h.past, h.present], present: h.future[0], future: h.future.slice(1) }
+      })
+    },
 
     /** Sets the document title. */
     setDocTitle,
@@ -77,11 +103,13 @@ export function useChecklist() {
     /** Sets the id of the item being dragged. */
     setDragId,
 
-    /** Replaces the whole checklist, including its title and footer. */
+    /** Replaces the whole checklist, including its title and footer, and clears the undo history. */
     load: (json: JsonChecklist) => {
-      setDocTitle(json.title ?? DEFAULT_TITLE)
-      setFooter(json.footer ?? DEFAULT_FOOTER)
-      return setBlocks(fromJson(json.blocks))
+      return setHistory(fresh({
+        title: json.title ?? DEFAULT_TITLE,
+        footer: json.footer ?? DEFAULT_FOOTER,
+        blocks: fromJson(json.blocks),
+      }))
     },
 
     /** Appends an empty section. */
@@ -147,7 +175,9 @@ export function useChecklist() {
     /** Inserts a line or note after afterId (at the top when null) and focuses it. */
     insertItem: (sid: number, afterId: number | null, note: boolean) => {
       const id = nextId++
-      const item = note ? { id, note: 'Note' } : { id, label: 'ITEM', value: 'VALUE' }
+      const item = note
+        ? { id, note: 'Note' }
+        : { id, label: 'ITEM', value: 'VALUE' }
 
       mapItems(sid, items => {
         const at = items.findIndex(it => it.id === afterId)
@@ -179,6 +209,5 @@ export function useChecklist() {
   }
 }
 
-export type Store = ReturnType<typeof useChecklist>
 export const StoreContext = createContext<Store>(null!)
 export const useStore = () => useContext(StoreContext)

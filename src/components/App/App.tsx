@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState, type ChangeEvent } from 'react'
 import { DndContext, DragOverlay, closestCenter } from '@dnd-kit/core'
-import { Download, ImagePlus, LoaderCircle, SquarePlus } from 'lucide-react'
-import { DEFAULT_TITLE, StoreContext, toJson, useChecklist } from '../../store'
+import { Download, ImagePlus, LoaderCircle, Redo2, SquarePlus, Undo2 } from 'lucide-react'
+import { DEFAULT_TITLE } from '../../constants'
+import { StoreContext, toJson, useChecklist } from '../../store'
 import { checklists, hashName, request } from '../../utils/checklists'
 import { layout } from '../../utils/layout'
 import ChecklistMenu from '../ChecklistMenu/ChecklistMenu'
@@ -124,6 +125,8 @@ export default function App() {
           </h1>
           <div className="app__tools">
             <ChecklistMenu />
+            <IconButton icon={Undo2} title="Undo" aria-disabled={!st.canUndo} onClick={st.undo} />
+            <IconButton icon={Redo2} title="Redo" aria-disabled={!st.canRedo} onClick={st.redo} />
             <IconButton icon={SquarePlus} title="Add section" onClick={st.addSection} />
             <IconButton icon={ImagePlus} title="Add image" onClick={() => fileInput.current?.click()} />
             <IconButton icon={Download} title="Download JSON" onClick={() => download(toJson(st))} />

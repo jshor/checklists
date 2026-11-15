@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { ARROW_KEYS } from '../../constants'
 import './Edit.scss'
 
 type Props = {
@@ -10,8 +11,6 @@ type Props = {
   focusId?: string
   className?: string
 }
-
-const arrows: Record<string, -1 | 1> = { ArrowUp: -1, ArrowDown: 1 }
 
 /**
  * Renders inline editable text that commits on blur, Enter or Up/Down and selects all on focus.
@@ -30,7 +29,7 @@ export default function Edit({ value, display, onChange, onEnter, onArrow, focus
     <span key={value} className={`edit ${className}`} contentEditable suppressContentEditableWarning tabIndex={0}
       data-focus={focusId}
       onKeyDown={e => {
-        const dir = onArrow && arrows[e.key]
+        const dir = onArrow && ARROW_KEYS[e.key]
         if (e.key !== 'Enter' && !dir) return
         e.preventDefault()
         commit(e.currentTarget)
