@@ -86,3 +86,13 @@ export type JsonBlock =
     /** Spans both columns when true. */
     wide: boolean
   }
+
+/** A whole checklist as stored in a checklist file and the downloaded JSON. */
+export type JsonChecklist = {
+  /** Document title. */
+  title?: string
+  /** Left, center and right footer texts. */
+  footer?: string[]
+  /** Blocks in flow order. */
+  blocks: JsonBlock[]
+}

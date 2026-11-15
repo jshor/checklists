@@ -14,7 +14,7 @@ const entry = (e: Fragment | Placed) => ('img' in e
 /**
  * Renders a printed sheet: two-column bands and full-width images, plus the footer.
  */
-export default function Page({ page }: { page: PageData }) {
+export default function Page({ page, number, total }: { page: PageData; number: number; total: number }) {
   return (
     <div className="page">
       {page.map((e, k) => ('img' in e ? entry(e) : (
@@ -22,7 +22,7 @@ export default function Page({ page }: { page: PageData }) {
           {e.cols.map((col, c) => <div className="page__col" key={c}>{col.map(entry)}</div>)}
         </div>
       )))}
-      <Footer />
+      <Footer page={number} pages={total} />
     </div>
   )
 }

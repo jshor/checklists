@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState, type ChangeEvent } from 'react'
 import { DndContext, DragOverlay, closestCenter } from '@dnd-kit/core'
 import { Download, ImagePlus, LoaderCircle, SquarePlus } from 'lucide-react'
-import { StoreContext, toJson, useChecklist } from '../../store'
+import { DEFAULT_TITLE, StoreContext, toJson, useChecklist } from '../../store'
 import { checklists, hashName, request } from '../../utils/checklists'
 import { layout } from '../../utils/layout'
 import ChecklistMenu from '../ChecklistMenu/ChecklistMenu'
+import Edit from '../Edit/Edit'
 import IconButton from '../IconButton/IconButton'
 import Page from '../Page/Page'
 import { imageUrl } from '../ImageBlock/ImageBlock'
@@ -51,11 +52,11 @@ export default function App() {
 
       setLoading(!!url)
 
-      if (!url) return st.load([])
+      if (!url) return st.load({ blocks: [] })
 
       request(url)
         .then(json => id === latest && st.load(json))
-        .catch(err => { console.error(err); st.load([]) })
+        .catch(err => { console.error(err); st.load({ blocks: [] }) })
         .finally(() => id === latest && setLoading(false))
     }
 
@@ -63,6 +64,10 @@ export default function App() {
     addEventListener('hashchange', open)
     return () => removeEventListener('hashchange', open)
   }, [])
+
+  useEffect(() => {
+    document.title = st.title || DEFAULT_TITLE
+  }, [st.title])
 
   useEffect(() => {
     document.addEventListener('mousedown', blockStrayFocus)
@@ -114,18 +119,23 @@ export default function App() {
     <StoreContext value={st}>
       <div className="app">
         <div className="app__toolbar no-print">
-          <ChecklistMenu />
-          <IconButton icon={SquarePlus} title="Add section" onClick={st.addSection} />
-          <IconButton icon={ImagePlus} title="Add image" onClick={() => fileInput.current?.click()} />
-          <IconButton icon={Download} title="Download JSON" onClick={() => download(toJson(st.blocks))} />
-          <input ref={fileInput} type="file" accept="image/*" hidden onChange={addImage} />
+          <h1 className="app__title">
+            <Edit value={st.title} onChange={st.setDocTitle} />
+          </h1>
+          <div className="app__tools">
+            <ChecklistMenu />
+            <IconButton icon={SquarePlus} title="Add section" onClick={st.addSection} />
+            <IconButton icon={ImagePlus} title="Add image" onClick={() => fileInput.current?.click()} />
+            <IconButton icon={Download} title="Download JSON" onClick={() => download(toJson(st))} />
+            <input ref={fileInput} type="file" accept="image/*" hidden onChange={addImage} />
+          </div>
         </div>
 
         <DndContext collisionDetection={closestCenter}
           onDragStart={e => st.setDragId(e.active.id as number)}
           onDragEnd={({ active, over }) => { st.setDragId(null); if (over) st.sortItems(active.id as number, over.id as number) }}
           onDragCancel={() => st.setDragId(null)}>
-          {layout(st.blocks).map((page, p) => <Page key={p} page={page} />)}
+          {layout(st.blocks).map((page, p, pages) => <Page key={p} page={page} number={p + 1} total={pages.length} />)}
           {/* The ghost lives in an overlay so it stays visible across columns and pages. */}
           <DragOverlay>{st.dragItem && <RowGhost item={st.dragItem} />}</DragOverlay>
         </DndContext>

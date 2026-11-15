@@ -77,6 +77,17 @@ describe('Edit', () => {
     expect(onArrow.mock.calls).toEqual([[-1], [1]])
   })
 
+  it('shows display text until focused, then the raw value', () => {
+    render(<Edit value="Page {n}" display="Page 2" onChange={vi.fn()} />)
+    const el = screen.getByText('Page 2')
+
+    fireEvent.focus(el)
+    expect(el.textContent).toBe('Page {n}')
+
+    fireEvent.blur(el)
+    expect(el.textContent).toBe('Page 2')
+  })
+
   it('leaves arrow keys alone without onArrow', () => {
     const { el } = setup()
 

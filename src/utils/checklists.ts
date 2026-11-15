@@ -1,4 +1,4 @@
-import type { JsonBlock } from '../types'
+import type { JsonChecklist } from '../types'
 
 const urls = import.meta.glob<string>('../checklists/*.json', { eager: true, query: '?url', import: 'default' })
 
@@ -14,7 +14,7 @@ export const hashName = () => decodeURIComponent(location.hash.slice(1))
  * Returns a checklist fetched by XHR.
  */
 export const request = (url: string) => {
-  return new Promise<JsonBlock[]>((resolve, reject) => {
+  return new Promise<JsonChecklist>((resolve, reject) => {
     const xhr = new XMLHttpRequest()
 
     xhr.open('GET', url)

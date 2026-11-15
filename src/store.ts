@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from 'react'
 import { arrayMove } from '@dnd-kit/sortable'
-import type { Block, Item, JsonBlock, Section } from './types'
+import type { Block, Item, JsonBlock, JsonChecklist, Section } from './types'
 
 let nextId = 1
 
@@ -24,21 +24,32 @@ export const fromJson = (json: JsonBlock[]): Block[] => {
 }
 
 /**
- * Serializes a Block[] into JSON, omitting the ids.
+ * Serializes the title, footer and blocks into checklist JSON, omitting the ids.
  */
-export const toJson = (blocks: Block[]) => {
-  return JSON.stringify(
-    blocks.map(b => {
+export const toJson = ({ title, footer, blocks }: { title: string; footer: string[]; blocks: Block[] }) => {
+  const json: JsonChecklist = {
+    title,
+    footer,
+    blocks: blocks.map(b => {
       return b.type === 'image'
         ? { image: b.src, ratio: b.ratio, wide: b.wide }
-        : { title: b.title, items: b.items.map(it => it.note ?? [it.label, it.value]) }
-    })
-  , null, 2)
+        : { title: b.title, items: b.items.map(it => it.note ?? [it.label!, it.value!]) }
+    }),
+  }
+
+  return JSON.stringify(json, null, 2)
 }
+
+/** Title for a checklist that does not specify one. */
+export const DEFAULT_TITLE = 'Untitled Checklist'
+
+/** Footer texts for a checklist that does not specify any. */
+export const DEFAULT_FOOTER = ['Aircraft', 'For Flight Simulation Only.', 'Page {n} of {m}']
 
 export function useChecklist() {
   const [blocks, setBlocks] = useState<Block[]>([])
-  const [footer, setFooter] = useState(['Aircraft', 'For Flight Simulation Only.', 'v1.0'])
+  const [title, setDocTitle] = useState(DEFAULT_TITLE)
+  const [footer, setFooter] = useState(DEFAULT_FOOTER)
   const [focusId, focus] = useState<string | null>(null) // data-focus of an element to focus after render
   const [dragId, setDragId] = useState<number | null>(null)
 
@@ -52,7 +63,10 @@ export function useChecklist() {
   }
 
   return {
-    blocks, footer, focusId,
+    blocks, title, footer, focusId,
+
+    /** Sets the document title. */
+    setDocTitle,
 
     /** The item being dragged, or null if none. */
     dragItem: blocks.flatMap(b => (b.type === 'section' ? b.items : [])).find(it => it.id === dragId),
@@ -63,9 +77,11 @@ export function useChecklist() {
     /** Sets the id of the item being dragged. */
     setDragId,
 
-    /** Replaces the whole checklist. */
-    load: (json: JsonBlock[]) => {
-      return setBlocks(fromJson(json))
+    /** Replaces the whole checklist, including its title and footer. */
+    load: (json: JsonChecklist) => {
+      setDocTitle(json.title ?? DEFAULT_TITLE)
+      setFooter(json.footer ?? DEFAULT_FOOTER)
+      return setBlocks(fromJson(json.blocks))
     },
 
     /** Appends an empty section. */

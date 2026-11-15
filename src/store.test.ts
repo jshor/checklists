@@ -1,15 +1,16 @@
 import { describe, expect, it } from 'vitest'
 import { act, renderHook } from '@testing-library/react'
 import b38m from './checklists/B38M.json'
-import { fromJson, toJson, useChecklist } from './store'
-import type { JsonBlock, Section } from './types'
+import { DEFAULT_FOOTER, DEFAULT_TITLE, fromJson, toJson, useChecklist } from './store'
+import type { JsonChecklist, Section } from './types'
 
-const defaults = b38m as JsonBlock[]
+const checklist = b38m as JsonChecklist
+const defaults = checklist.blocks
 
 const setup = () => {
   const hook = renderHook(() => useChecklist())
 
-  act(() => hook.result.current.load(defaults))
+  act(() => hook.result.current.load(checklist))
   return hook
 }
 type Hook = ReturnType<typeof setup>['result']
@@ -20,7 +21,9 @@ const labels = (s: Section) => s.items.map(it => it.label ?? it.note)
 
 describe('fromJson / toJson', () => {
   it('round-trips the default checklist', () => {
-    expect(JSON.parse(toJson(fromJson(defaults)))).toEqual(defaults)
+    const json = { title: 'T', ...checklist }
+
+    expect(JSON.parse(toJson({ title: json.title, footer: json.footer!, blocks: fromJson(defaults) }))).toEqual(json)
   })
 
   it('reads notes, pairs and images', () => {
@@ -44,11 +47,12 @@ describe('fromJson / toJson', () => {
 })
 
 describe('useChecklist', () => {
-  it('starts empty with the default footer', () => {
+  it('starts empty with the default title and footer', () => {
     const { result } = renderHook(() => useChecklist())
 
     expect(result.current.blocks).toEqual([])
-    expect(result.current.footer).toEqual(['Aircraft', 'For Flight Simulation Only.', 'v1.0'])
+    expect(result.current.title).toBe(DEFAULT_TITLE)
+    expect(result.current.footer).toEqual(DEFAULT_FOOTER)
   })
 
   it('loads a checklist in order', () => {
@@ -60,9 +64,21 @@ describe('useChecklist', () => {
   it('loads a checklist', () => {
     const { result } = setup()
 
-    act(() => result.current.load([{ title: 'ONLY', items: [] }]))
+    act(() => result.current.load({ title: 'DOC', footer: ['A', 'B', 'C'], blocks: [{ title: 'ONLY', items: [] }] }))
 
     expect(titles(result)).toEqual(['ONLY'])
+    expect(result.current.footer).toEqual(['A', 'B', 'C'])
+    expect(result.current.title).toBe('DOC')
+  })
+
+  it('uses the default title and footer when a checklist has none', () => {
+    const { result } = setup()
+
+    act(() => result.current.setDocTitle('X'))
+    act(() => result.current.load({ blocks: [] }))
+
+    expect(result.current.title).toBe(DEFAULT_TITLE)
+    expect(result.current.footer).toEqual(DEFAULT_FOOTER)
   })
 
   it('adds and removes sections', () => {
@@ -97,9 +113,9 @@ describe('useChecklist', () => {
   it('sets a section title', () => {
     const { result } = setup()
 
-    act(() => result.current.setTitle(result.current.blocks[0].id, 'NEW'))
+    act(() => result.current.setTitle(sections(result)[0].id, 'NEW'))
 
-    expect(titles(result)[0]).toBe('NEW')
+    expect(sections(result)[0].title).toBe('NEW')
   })
 
   it('adds images and toggles their width', () => {
@@ -184,6 +200,6 @@ describe('useChecklist', () => {
 
     act(() => result.current.setFooterText(1, 'X'))
 
-    expect(result.current.footer).toEqual(['Aircraft', 'X', 'v1.0'])
+    expect(result.current.footer[1]).toBe('X')
   })
 })

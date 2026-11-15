@@ -1,646 +1,657 @@
-[
-  {
-    "image": "<?xml version='1.0' encoding='utf-8'?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"Layer_1\" data-name=\"Layer 1\" viewBox=\"0 0 296 40\" width=\"1184\" height=\"160\" role=\"img\" aria-labelledby=\"header-title\">\n  <defs>\n    <style>.cls-2{fill:#333;}</style>\n  </defs>\n  <title id=\"header-title\">Boeing 737 MAX8 — Normal Checklist</title>\n  <path class=\"cls-2\" d=\"M27,24.16a13.54,13.54,0,0,0-4.79-17c2.17-2.23,4.52-4.44,7-6.55A61,61,0,0,0,21,6.46,13.54,13.54,0,0,0,4.47,27.29c-2.59,5.61-3,10.11-.76,11.63,2.45,1.63,7.77-1.33,11-6.14,0,0-4.94,4.45-7.65,3.43-1.67-.63-1.67-3.19-.3-6.85a13.54,13.54,0,0,0,17.52-1.28l.48.9c5.9-.48,23.51-.95,23.51-.95C48.23,27.2,36.57,28,27,24.16ZM2.82,18.45A11.92,11.92,0,0,1,19.67,7.61,64.92,64.92,0,0,0,5.26,25.68,11.86,11.86,0,0,1,2.82,18.45ZM14.73,30.36a11.86,11.86,0,0,1-7.37-2.55c2.36-5.32,7.16-12.46,13.71-19.44a11.91,11.91,0,0,1,4.43,15.15,21.76,21.76,0,0,1-5.66-3.69l3.59,6.74A11.87,11.87,0,0,1,14.73,30.36Z\" />\n  <polygon class=\"cls-2\" points=\"107.76 17.21 109.96 14.28 102.28 14.28 104.17 11.77 111.86 11.77 114.07 8.84 98.73 8.84 88.18 22.84 103.52 22.84 105.72 19.91 98.04 19.91 100.07 17.21 107.76 17.21 107.76 17.21\" />\n  <polygon class=\"cls-2\" points=\"118.41 8.84 107.86 22.84 115.52 22.84 126.06 8.84 118.41 8.84 118.41 8.84\" />\n  <polygon class=\"cls-2\" points=\"143.91 8.84 138.56 15.94 136.92 8.84 130.94 8.84 120.39 22.84 125.45 22.84 130.75 15.81 132.38 22.84 138.42 22.84 148.97 8.84 143.91 8.84 143.91 8.84\" />\n  <path class=\"cls-2\" d=\"M168.93,8.84h-12.3a6.43,6.43,0,0,0-5.15,2.57l-6.35,8.43a1.85,1.85,0,0,0-.38,1.13,1.88,1.88,0,0,0,1.87,1.88h12.3a6.44,6.44,0,0,0,5.16-2.57l1.53-2h1.78l2.22-3h-9.42l-3,3.95a1.67,1.67,0,0,1-1.34.67h-2.17a.49.49,0,0,1-.49-.49.46.46,0,0,1,.1-.29l5-6.7a1.66,1.66,0,0,1,1.34-.67h2.17a.49.49,0,0,1,.49.49.51.51,0,0,1-.1.29l-.82,1.09h7.64l1.35-1.8a1.87,1.87,0,0,0-1.5-3Z\" />\n  <path class=\"cls-2\" d=\"M92.45,10.72a1.87,1.87,0,0,0-1.87-1.87H78.28a6.44,6.44,0,0,0-5.16,2.57l-6.35,8.43a1.88,1.88,0,0,0,1.5,3h12.3a6.44,6.44,0,0,0,5.16-2.57l6.35-8.43a1.86,1.86,0,0,0,.37-1.13ZM83.9,12.55l-5,6.69a1.66,1.66,0,0,1-1.34.67H75.35a.49.49,0,0,1-.39-.78l5-6.7a1.69,1.69,0,0,1,1.34-.67h2.17a.49.49,0,0,1,.49.49.51.51,0,0,1-.1.29Z\" />\n  <path class=\"cls-2\" d=\"M63.52,16.18a6.43,6.43,0,0,0,3.72-2.41l1.46-1.93a1.87,1.87,0,0,0-1.5-3H51.68l-10.55,14H57.19a6.44,6.44,0,0,0,5.16-2.57l1.49-2a1.47,1.47,0,0,0,.3-.9,1.51,1.51,0,0,0-.61-1.21ZM56.42,18l-.95,1.26a1.67,1.67,0,0,1-1.34.67H51l2-2.7h3a.49.49,0,0,1,.49.49.47.47,0,0,1-.1.29Zm4.1-5.44-.81,1.07a1.68,1.68,0,0,1-1.34.66H55.24l1.89-2.51h3a.49.49,0,0,1,.49.49.51.51,0,0,1-.1.29Z\" />\n  <text id=\"model\" x=\"170.74\" y=\"39\" fill=\"#333\" font-family=\"Segoe UI, sans-serif\" font-size=\"15\" text-anchor=\"end\" transform=\"translate(0.75,0.22075)\"><tspan font-weight=\"700\">737</tspan><tspan font-weight=\"400\">MAX8</tspan></text>\n  <g id=\"checklist-title\" fill=\"#333\" font-family=\"Segoe UI, sans-serif\" font-size=\"11\" font-weight=\"400\" text-anchor=\"end\" transform=\"translate(0,-0.375)\">\n    <text id=\"normal\" x=\"294\" y=\"18\">Normal</text>\n    <text id=\"checklist\" x=\"294\" y=\"31\">Checklist</text>\n  </g>\n</svg>",
-    "ratio": 0.13513513513513514,
-    "wide": true
-  },
-  {
-    "title": "PREFLIGHT",
-    "items": [
-      [
-        "PARKING BRAKE",
-        "SET"
-      ],
-      [
-        "BATTERY",
-        "ON, GUARDED"
-      ],
-      [
-        "GROUND POWER",
-        "AS REQUIRED"
-      ],
-      [
-        "IRS (L & R)",
-        "NAV"
-      ],
-      [
-        "CABIN/UTILITY",
-        "ON"
-      ],
-      [
-        "IFE PASS SEAT POWER",
-        "ON"
-      ],
-      [
-        "EMER EXIT LIGHTS",
-        "ARMED"
-      ],
-      [
-        "LOGO LIGHTS",
-        "AS REQUIRED"
-      ],
-      [
-        "POSITION LIGHTS",
-        "STEADY"
-      ],
-      [
-        "WINDOW HEAT",
-        "ON"
-      ],
-      [
-        "TRIM AIR",
-        "ON"
-      ],
-      [
-        "RECIRC FAN",
-        "AUTO"
-      ],
-      [
-        "PACKS (L & R)",
-        "AUTO"
-      ],
-      [
-        "ISOLATION VALVE",
-        "OPEN"
-      ],
-      [
-        "PRESSURIZATION",
-        "AUTO; ALTS SET"
-      ],
-      [
-        "FUEL PUMP 1 FWD",
-        "ON"
-      ],
-      [
-        "ALTIMETERS",
-        "SET"
-      ],
-      [
-        "TRANSPONDER",
-        "AS REQUIRED"
-      ],
-      [
-        "FLT DIRECTORS",
-        "ON"
-      ],
-      [
-        "FMC",
-        "SETUP"
-      ],
-      [
-        "MCP",
-        "V2, HDG, ALT"
-      ],
-      [
-        "LNAV & VNAV",
-        "AS REQUIRED"
-      ],
-      [
-        "APU",
-        "AS REQUIRED"
-      ],
-      [
-        "OXYGEN",
-        "TESTED, 100%"
-      ],
-      [
-        "APU GEN",
-        "AS REQUIRED"
-      ],
-      [
-        "APU BLEED",
-        "AS REQUIRED"
+{
+  "footer": [
+    "Boeing 737-MAX8 Normal Checklist",
+    "For Flight Simulation Only.",
+    "Page {n} of {m}"
+  ],
+  "blocks": [
+    {
+      "image": "<?xml version='1.0' encoding='utf-8'?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"Layer_1\" data-name=\"Layer 1\" viewBox=\"0 0 296 40\" width=\"1184\" height=\"160\" role=\"img\" aria-labelledby=\"header-title\">\n  <defs>\n    <style>.cls-2{fill:#333;}</style>\n  </defs>\n  <title id=\"header-title\">Boeing 737 MAX8 — Normal Checklist</title>\n  <path class=\"cls-2\" d=\"M27,24.16a13.54,13.54,0,0,0-4.79-17c2.17-2.23,4.52-4.44,7-6.55A61,61,0,0,0,21,6.46,13.54,13.54,0,0,0,4.47,27.29c-2.59,5.61-3,10.11-.76,11.63,2.45,1.63,7.77-1.33,11-6.14,0,0-4.94,4.45-7.65,3.43-1.67-.63-1.67-3.19-.3-6.85a13.54,13.54,0,0,0,17.52-1.28l.48.9c5.9-.48,23.51-.95,23.51-.95C48.23,27.2,36.57,28,27,24.16ZM2.82,18.45A11.92,11.92,0,0,1,19.67,7.61,64.92,64.92,0,0,0,5.26,25.68,11.86,11.86,0,0,1,2.82,18.45ZM14.73,30.36a11.86,11.86,0,0,1-7.37-2.55c2.36-5.32,7.16-12.46,13.71-19.44a11.91,11.91,0,0,1,4.43,15.15,21.76,21.76,0,0,1-5.66-3.69l3.59,6.74A11.87,11.87,0,0,1,14.73,30.36Z\" />\n  <polygon class=\"cls-2\" points=\"107.76 17.21 109.96 14.28 102.28 14.28 104.17 11.77 111.86 11.77 114.07 8.84 98.73 8.84 88.18 22.84 103.52 22.84 105.72 19.91 98.04 19.91 100.07 17.21 107.76 17.21 107.76 17.21\" />\n  <polygon class=\"cls-2\" points=\"118.41 8.84 107.86 22.84 115.52 22.84 126.06 8.84 118.41 8.84 118.41 8.84\" />\n  <polygon class=\"cls-2\" points=\"143.91 8.84 138.56 15.94 136.92 8.84 130.94 8.84 120.39 22.84 125.45 22.84 130.75 15.81 132.38 22.84 138.42 22.84 148.97 8.84 143.91 8.84 143.91 8.84\" />\n  <path class=\"cls-2\" d=\"M168.93,8.84h-12.3a6.43,6.43,0,0,0-5.15,2.57l-6.35,8.43a1.85,1.85,0,0,0-.38,1.13,1.88,1.88,0,0,0,1.87,1.88h12.3a6.44,6.44,0,0,0,5.16-2.57l1.53-2h1.78l2.22-3h-9.42l-3,3.95a1.67,1.67,0,0,1-1.34.67h-2.17a.49.49,0,0,1-.49-.49.46.46,0,0,1,.1-.29l5-6.7a1.66,1.66,0,0,1,1.34-.67h2.17a.49.49,0,0,1,.49.49.51.51,0,0,1-.1.29l-.82,1.09h7.64l1.35-1.8a1.87,1.87,0,0,0-1.5-3Z\" />\n  <path class=\"cls-2\" d=\"M92.45,10.72a1.87,1.87,0,0,0-1.87-1.87H78.28a6.44,6.44,0,0,0-5.16,2.57l-6.35,8.43a1.88,1.88,0,0,0,1.5,3h12.3a6.44,6.44,0,0,0,5.16-2.57l6.35-8.43a1.86,1.86,0,0,0,.37-1.13ZM83.9,12.55l-5,6.69a1.66,1.66,0,0,1-1.34.67H75.35a.49.49,0,0,1-.39-.78l5-6.7a1.69,1.69,0,0,1,1.34-.67h2.17a.49.49,0,0,1,.49.49.51.51,0,0,1-.1.29Z\" />\n  <path class=\"cls-2\" d=\"M63.52,16.18a6.43,6.43,0,0,0,3.72-2.41l1.46-1.93a1.87,1.87,0,0,0-1.5-3H51.68l-10.55,14H57.19a6.44,6.44,0,0,0,5.16-2.57l1.49-2a1.47,1.47,0,0,0,.3-.9,1.51,1.51,0,0,0-.61-1.21ZM56.42,18l-.95,1.26a1.67,1.67,0,0,1-1.34.67H51l2-2.7h3a.49.49,0,0,1,.49.49.47.47,0,0,1-.1.29Zm4.1-5.44-.81,1.07a1.68,1.68,0,0,1-1.34.66H55.24l1.89-2.51h3a.49.49,0,0,1,.49.49.51.51,0,0,1-.1.29Z\" />\n  <text id=\"model\" x=\"170.74\" y=\"39\" fill=\"#333\" font-family=\"Segoe UI, sans-serif\" font-size=\"15\" text-anchor=\"end\" transform=\"translate(0.75,0.22075)\"><tspan font-weight=\"700\">737</tspan><tspan font-weight=\"400\">MAX8</tspan></text>\n  <g id=\"checklist-title\" fill=\"#333\" font-family=\"Segoe UI, sans-serif\" font-size=\"11\" font-weight=\"400\" text-anchor=\"end\" transform=\"translate(0,-0.375)\">\n    <text id=\"normal\" x=\"294\" y=\"18\">Normal</text>\n    <text id=\"checklist\" x=\"294\" y=\"31\">Checklist</text>\n  </g>\n</svg>",
+      "ratio": 0.13513513513513514,
+      "wide": true
+    },
+    {
+      "title": "PREFLIGHT",
+      "items": [
+        [
+          "PARKING BRAKE",
+          "SET"
+        ],
+        [
+          "BATTERY",
+          "ON, GUARDED"
+        ],
+        [
+          "GROUND POWER",
+          "AS REQUIRED"
+        ],
+        [
+          "IRS (L & R)",
+          "NAV"
+        ],
+        [
+          "CABIN/UTILITY",
+          "ON"
+        ],
+        [
+          "IFE PASS SEAT POWER",
+          "ON"
+        ],
+        [
+          "EMER EXIT LIGHTS",
+          "ARMED"
+        ],
+        [
+          "LOGO LIGHTS",
+          "AS REQUIRED"
+        ],
+        [
+          "POSITION LIGHTS",
+          "STEADY"
+        ],
+        [
+          "WINDOW HEAT",
+          "ON"
+        ],
+        [
+          "TRIM AIR",
+          "ON"
+        ],
+        [
+          "RECIRC FAN",
+          "AUTO"
+        ],
+        [
+          "PACKS (L & R)",
+          "AUTO"
+        ],
+        [
+          "ISOLATION VALVE",
+          "OPEN"
+        ],
+        [
+          "PRESSURIZATION",
+          "AUTO; ALTS SET"
+        ],
+        [
+          "FUEL PUMP 1 FWD",
+          "ON"
+        ],
+        [
+          "ALTIMETERS",
+          "SET"
+        ],
+        [
+          "TRANSPONDER",
+          "AS REQUIRED"
+        ],
+        [
+          "FLT DIRECTORS",
+          "ON"
+        ],
+        [
+          "FMC",
+          "SETUP"
+        ],
+        [
+          "MCP",
+          "V2, HDG, ALT"
+        ],
+        [
+          "LNAV & VNAV",
+          "AS REQUIRED"
+        ],
+        [
+          "APU",
+          "AS REQUIRED"
+        ],
+        [
+          "OXYGEN",
+          "TESTED, 100%"
+        ],
+        [
+          "APU GEN",
+          "AS REQUIRED"
+        ],
+        [
+          "APU BLEED",
+          "AS REQUIRED"
+        ]
       ]
-    ]
-  },
-  {
-    "title": "BEFORE START",
-    "items": [
-      [
-        "POWER TRANSFER",
-        "CHECK"
-      ],
-      [
-        "GROUND POWER",
-        "OFF / DISCONNECT"
-      ],
-      [
-        "CHOCKS",
-        "AS REQUIRED"
-      ],
-      [
-        "FLT DECK DOOR",
-        "CLOSED / LOCKED"
-      ],
-      [
-        "YAW DAMPER",
-        "ON"
-      ],
-      [
-        "PROBE HEAT",
-        "ON"
-      ],
-      [
-        "HYD PUMPS",
-        "ON"
-      ],
-      [
-        "FUEL PUMPS",
-        "AS REQUIRED"
-      ],
-      [
-        "PASSENGER SIGNS",
-        "ON/AUTO"
-      ],
-      [
-        "ANTI-COLLISION",
-        "ON"
-      ],
-      [
-        "PACKS (L & R)",
-        "OFF"
-      ],
-      [
-        "START AIR",
-        "AS REQUIRED"
-      ],
-      [
-        "MOTORING",
-        "BLANK BEFORE FUEL"
-      ],
-      [
-        "ENGINE START",
-        "AS REQUIRED"
+    },
+    {
+      "title": "BEFORE START",
+      "items": [
+        [
+          "POWER TRANSFER",
+          "CHECK"
+        ],
+        [
+          "GROUND POWER",
+          "OFF / DISCONNECT"
+        ],
+        [
+          "CHOCKS",
+          "AS REQUIRED"
+        ],
+        [
+          "FLT DECK DOOR",
+          "CLOSED / LOCKED"
+        ],
+        [
+          "YAW DAMPER",
+          "ON"
+        ],
+        [
+          "PROBE HEAT",
+          "ON"
+        ],
+        [
+          "HYD PUMPS",
+          "ON"
+        ],
+        [
+          "FUEL PUMPS",
+          "AS REQUIRED"
+        ],
+        [
+          "PASSENGER SIGNS",
+          "ON/AUTO"
+        ],
+        [
+          "ANTI-COLLISION",
+          "ON"
+        ],
+        [
+          "PACKS (L & R)",
+          "OFF"
+        ],
+        [
+          "START AIR",
+          "AS REQUIRED"
+        ],
+        [
+          "MOTORING",
+          "BLANK BEFORE FUEL"
+        ],
+        [
+          "ENGINE START",
+          "AS REQUIRED"
+        ]
       ]
-    ]
-  },
-  {
-    "title": "BEFORE TAXI",
-    "items": [
-      [
-        "ENGINE GEN (1 & 2)",
-        "ON"
-      ],
-      [
-        "ELEC POWER",
-        "ON BUS"
-      ],
-      [
-        "ANTI-ICE",
-        "AS REQUIRED"
-      ],
-      [
-        "AUTOBRAKE",
-        "RTO"
-      ],
-      [
-        "FLAPS",
-        "SET"
-      ],
-      [
-        "TRIM",
-        "SET"
-      ],
-      [
-        "APU BLEED",
-        "OFF"
-      ],
-      [
-        "PACKS (L & R)",
-        "AUTO"
-      ],
-      [
-        "ISOLATION VALVE",
-        "AUTO"
-      ],
-      [
-        "ENGINE BLEEDS (1 & 2)",
-        "ON"
-      ],
-      [
-        "APU",
-        "AS REQUIRED"
-      ],
-      [
-        "FLIGHT CONTROLS",
-        "CHECKED"
-      ],
-      [
-        "GND EQUIPMENT",
-        "CLEAR"
-      ],
-      [
-        "TRANSPONDER / ADS-B",
-        "ALT RPTG / AS REQUIRED"
-      ],
-      [
-        "BRAKES / STEERING",
-        "CHECK"
-      ],
-      [
-        "TAXI LIGHTS",
-        "ON"
-      ],
-      [
-        "RWY TURN-OFF LIGHTS",
-        "AS REQUIRED"
+    },
+    {
+      "title": "BEFORE TAXI",
+      "items": [
+        [
+          "ENGINE GEN (1 & 2)",
+          "ON"
+        ],
+        [
+          "ELEC POWER",
+          "ON BUS"
+        ],
+        [
+          "ANTI-ICE",
+          "AS REQUIRED"
+        ],
+        [
+          "AUTOBRAKE",
+          "RTO"
+        ],
+        [
+          "FLAPS",
+          "SET"
+        ],
+        [
+          "TRIM",
+          "SET"
+        ],
+        [
+          "APU BLEED",
+          "OFF"
+        ],
+        [
+          "PACKS (L & R)",
+          "AUTO"
+        ],
+        [
+          "ISOLATION VALVE",
+          "AUTO"
+        ],
+        [
+          "ENGINE BLEEDS (1 & 2)",
+          "ON"
+        ],
+        [
+          "APU",
+          "AS REQUIRED"
+        ],
+        [
+          "FLIGHT CONTROLS",
+          "CHECKED"
+        ],
+        [
+          "GND EQUIPMENT",
+          "CLEAR"
+        ],
+        [
+          "TRANSPONDER / ADS-B",
+          "ALT RPTG / AS REQUIRED"
+        ],
+        [
+          "BRAKES / STEERING",
+          "CHECK"
+        ],
+        [
+          "TAXI LIGHTS",
+          "ON"
+        ],
+        [
+          "RWY TURN-OFF LIGHTS",
+          "AS REQUIRED"
+        ]
       ]
-    ]
-  },
-  {
-    "title": "BEFORE TAKEOFF",
-    "items": [
-      [
-        "PARKING BRAKE",
-        "RELEASE"
-      ],
-      [
-        "AUTOTHROTTLE",
-        "ARM"
-      ],
-      [
-        "TAKEOFF DATA (V1 VR V2)",
-        "CHECK"
-      ],
-      [
-        "TAKEOFF CONFIG",
-        "CHECK"
-      ],
-      [
-        "ENGINE START SWITCHES",
-        "CONT"
-      ],
-      [
-        "TERR / WX DISPLAY",
-        "AS REQUIRED"
-      ],
-      [
-        "LANDING LIGHTS",
-        "ON"
-      ],
-      [
-        "POSITION LIGHTS",
-        "STROBE & STEADY"
-      ],
-      [
-        "TAXI LIGHTS",
-        "OFF"
-      ],
-      [
-        "TRANSPONDER",
-        "TA/RA"
-      ],
-      [
-        "CLOCK",
-        "START"
+    },
+    {
+      "title": "BEFORE TAKEOFF",
+      "items": [
+        [
+          "PARKING BRAKE",
+          "RELEASE"
+        ],
+        [
+          "AUTOTHROTTLE",
+          "ARM"
+        ],
+        [
+          "TAKEOFF DATA (V1 VR V2)",
+          "CHECK"
+        ],
+        [
+          "TAKEOFF CONFIG",
+          "CHECK"
+        ],
+        [
+          "ENGINE START SWITCHES",
+          "CONT"
+        ],
+        [
+          "WX DISPLAY",
+          "AS REQUIRED"
+        ],
+        [
+          "TERR DISPLAY",
+          "AS REQUIRED"
+        ],
+        [
+          "LANDING LIGHTS",
+          "ON"
+        ],
+        [
+          "POSITION LIGHTS",
+          "STROBE & STEADY"
+        ],
+        [
+          "TAXI LIGHTS",
+          "OFF"
+        ],
+        [
+          "TRANSPONDER",
+          "TA/RA"
+        ],
+        [
+          "CLOCK",
+          "START"
+        ]
       ]
-    ]
-  },
-  {
-    "title": "AFTER TAKEOFF",
-    "items": [
-      [
-        "POSITIVE RATE",
-        "GEAR UP"
-      ],
-      [
-        "AUTOBRAKE",
-        "OFF"
-      ],
-      [
-        "RWY TURN-OFF LIGHTS",
-        "OFF"
-      ],
-      [
-        "FLAPS",
-        "RETRACT ON SCHED"
-      ],
-      [
-        "AUTOPILOT",
-        "AS REQUIRED"
-      ],
-      [
-        "BLEED AIR",
-        "ON"
-      ],
-      [
-        "PACKS & ISOL",
-        "AUTO"
-      ],
-      [
-        "PRESSURIZATION",
-        "CHECK"
-      ],
-      [
-        "LANDING GEAR / FLAPS",
-        "UP / CHECKED"
+    },
+    {
+      "title": "AFTER TAKEOFF",
+      "items": [
+        [
+          "POSITIVE RATE",
+          "GEAR UP"
+        ],
+        [
+          "AUTOBRAKE",
+          "OFF"
+        ],
+        [
+          "RWY TURN-OFF LIGHTS",
+          "OFF"
+        ],
+        [
+          "FLAPS",
+          "RETRACT ON SCHED"
+        ],
+        [
+          "AUTOPILOT",
+          "AS REQUIRED"
+        ],
+        [
+          "BLEED AIR",
+          "ON"
+        ],
+        [
+          "PACKS & ISOL",
+          "AUTO"
+        ],
+        [
+          "PRESSURIZATION",
+          "CHECK"
+        ],
+        [
+          "LANDING GEAR / FLAPS",
+          "UP / CHECKED"
+        ]
       ]
-    ]
-  },
-  {
-    "title": "CLIMB",
-    "items": [
-      "Passing TA",
-      [
-        "ALTIMETER",
-        "SET STD"
-      ],
-      "Passing 10000 ft",
-      [
-        "LANDING LIGHTS",
-        "OFF"
-      ],
-      [
-        "SEAT BELT SIGN",
-        "AS REQUIRED"
+    },
+    {
+      "title": "CLIMB",
+      "items": [
+        "Passing TA",
+        [
+          "ALTIMETER",
+          "SET STD"
+        ],
+        "Passing 10000 ft",
+        [
+          "LANDING LIGHTS",
+          "OFF"
+        ],
+        [
+          "SEAT BELT SIGN",
+          "AS REQUIRED"
+        ]
       ]
-    ]
-  },
-  {
-    "title": "DESCENT",
-    "items": [
-      [
-        "ANTI-ICE",
-        "AS REQUIRED"
-      ],
-      [
-        "RECALL",
-        "CHECK"
-      ],
-      [
-        "LANDING ALT",
-        "SET"
-      ],
-      [
-        "APPROACH BRIEFING",
-        "COMPLETE"
-      ],
-      "Passing TL",
-      [
-        "ALTIMETER",
-        "LOCAL QNH"
-      ],
-      "Below 10000 ft",
-      [
-        "LANDING LIGHTS",
-        "ON"
-      ],
-      [
-        "SEAT BELT SIGN",
-        "ON"
+    },
+    {
+      "title": "DESCENT",
+      "items": [
+        [
+          "ANTI-ICE",
+          "AS REQUIRED"
+        ],
+        [
+          "RECALL",
+          "CHECK"
+        ],
+        [
+          "LANDING ALT",
+          "SET"
+        ],
+        [
+          "APPROACH BRIEFING",
+          "COMPLETE"
+        ],
+        "Passing TL",
+        [
+          "ALTIMETER",
+          "LOCAL QNH"
+        ],
+        "Below 10000 ft",
+        [
+          "LANDING LIGHTS",
+          "ON"
+        ],
+        [
+          "SEAT BELT SIGN",
+          "ON"
+        ]
       ]
-    ]
-  },
-  {
-    "title": "APPROACH",
-    "items": [
-      [
-        "ALTIMETER",
-        "CHECK"
-      ],
-      [
-        "MINIMUMS",
-        "SET"
-      ],
-      [
-        "APPROACH SPD (FMC)",
-        "SET & CHECK"
-      ],
-      [
-        "APPROACH DATA",
-        "SET"
-      ],
-      [
-        "APP MODE",
-        "AS REQUIRED"
-      ],
-      [
-        "SPEEDBRAKE",
-        "ARM"
-      ],
-      [
-        "AUTOBRAKE",
-        "AS REQUIRED"
-      ],
-      [
-        "FLAPS",
-        "SET"
+    },
+    {
+      "title": "APPROACH",
+      "items": [
+        [
+          "ALTIMETER",
+          "CHECK"
+        ],
+        [
+          "MINIMUMS",
+          "SET"
+        ],
+        [
+          "APPROACH SPD (FMC)",
+          "SET & CHECK"
+        ],
+        [
+          "APPROACH DATA",
+          "SET"
+        ],
+        [
+          "APP MODE",
+          "AS REQUIRED"
+        ],
+        [
+          "SPEEDBRAKE",
+          "ARM"
+        ],
+        [
+          "AUTOBRAKE",
+          "AS REQUIRED"
+        ],
+        [
+          "FLAPS",
+          "SET"
+        ]
       ]
-    ]
-  },
-  {
-    "title": "LANDING",
-    "items": [
-      [
-        "MISSED APCH ALT",
-        "AS REQUIRED"
-      ],
-      [
-        "LANDING GEAR",
-        "DOWN, 3 GREEN"
-      ],
-      [
-        "LANDING FLAPS",
-        "SET / CHECKED"
+    },
+    {
+      "title": "LANDING",
+      "items": [
+        [
+          "MISSED APCH ALT",
+          "AS REQUIRED"
+        ],
+        [
+          "LANDING GEAR",
+          "DOWN, 3 GREEN"
+        ],
+        [
+          "LANDING FLAPS",
+          "SET / CHECKED"
+        ]
       ]
-    ]
-  },
-  {
-    "title": "AFTER LANDING",
-    "items": [
-      "Runway vacated",
-      [
-        "AUTOBRAKE",
-        "OFF"
-      ],
-      [
-        "FLAPS",
-        "RETRACT"
-      ],
-      [
-        "SPEEDBRAKES",
-        "DOWN"
-      ],
-      [
-        "LANDING LIGHTS",
-        "OFF"
-      ],
-      [
-        "POSITION LIGHTS",
-        "STEADY"
-      ],
-      [
-        "TAXI LIGHTS",
-        "ON"
-      ],
-      [
-        "TRANSPONDER",
-        "ALT RPTG / AS REQUIRED"
-      ],
-      [
-        "APU",
-        "AS REQUIRED"
-      ],
-      [
-        "APU GEN",
-        "AS REQUIRED"
-      ],
-      [
-        "WX RADAR",
-        "OFF / STANDBY"
-      ],
-      [
-        "CLOCK",
-        "STOP"
+    },
+    {
+      "title": "AFTER LANDING",
+      "items": [
+        "Runway vacated",
+        [
+          "AUTOBRAKE",
+          "OFF"
+        ],
+        [
+          "FLAPS",
+          "RETRACT"
+        ],
+        [
+          "SPEEDBRAKES",
+          "DOWN"
+        ],
+        [
+          "LANDING LIGHTS",
+          "OFF"
+        ],
+        [
+          "POSITION LIGHTS",
+          "STEADY"
+        ],
+        [
+          "TAXI LIGHTS",
+          "ON"
+        ],
+        [
+          "TRANSPONDER",
+          "ALT RPTG / AS REQUIRED"
+        ],
+        [
+          "APU",
+          "AS REQUIRED"
+        ],
+        [
+          "APU GEN",
+          "AS REQUIRED"
+        ],
+        [
+          "WX RADAR",
+          "OFF / STANDBY"
+        ],
+        [
+          "CLOCK",
+          "STOP"
+        ]
       ]
-    ]
-  },
-  {
-    "title": "PARKING - SHUTDOWN",
-    "items": [
-      [
-        "PARKING BRAKE",
-        "SET"
-      ],
-      [
-        "TAXI LIGHTS",
-        "OFF"
-      ],
-      [
-        "CHOCKS",
-        "SET"
-      ],
-      [
-        "EXTERNAL POWER",
-        "AS REQUIRED"
-      ],
-      [
-        "APU",
-        "AS REQUIRED"
-      ],
-      [
-        "ENGINE COOLDOWN",
-        "COMPLETE"
-      ],
-      [
-        "ENGINE START LEVERS",
-        "CUTOFF"
-      ],
-      [
-        "ANTI-COLLISION",
-        "OFF"
-      ],
-      [
-        "FLT DIRECTORS",
-        "OFF"
-      ],
-      [
-        "PASSENGER SIGNS",
-        "OFF"
-      ],
-      [
-        "YAW DAMPER",
-        "OFF"
-      ],
-      [
-        "ELEC HYD PUMPS",
-        "OFF"
-      ],
-      [
-        "FUEL PUMPS",
-        "AS REQUIRED"
-      ],
-      [
-        "PROBE HEAT",
-        "OFF"
-      ],
-      [
-        "ANTI-ICE",
-        "OFF"
-      ],
-      [
-        "TRANSPONDER",
-        "AS REQUIRED"
-      ],
-      [
-        "DOORS",
-        "AS REQUIRED"
+    },
+    {
+      "title": "PARKING - SHUTDOWN",
+      "items": [
+        [
+          "PARKING BRAKE",
+          "SET"
+        ],
+        [
+          "TAXI LIGHTS",
+          "OFF"
+        ],
+        [
+          "CHOCKS",
+          "SET"
+        ],
+        [
+          "EXTERNAL POWER",
+          "AS REQUIRED"
+        ],
+        [
+          "APU",
+          "AS REQUIRED"
+        ],
+        [
+          "ENGINE COOLDOWN",
+          "COMPLETE"
+        ],
+        [
+          "ENGINE START LEVERS",
+          "CUTOFF"
+        ],
+        [
+          "ANTI-COLLISION",
+          "OFF"
+        ],
+        [
+          "FLT DIRECTORS",
+          "OFF"
+        ],
+        [
+          "PASSENGER SIGNS",
+          "OFF"
+        ],
+        [
+          "YAW DAMPER",
+          "OFF"
+        ],
+        [
+          "ELEC HYD PUMPS",
+          "OFF"
+        ],
+        [
+          "FUEL PUMPS",
+          "AS REQUIRED"
+        ],
+        [
+          "PROBE HEAT",
+          "OFF"
+        ],
+        [
+          "ANTI-ICE",
+          "OFF"
+        ],
+        [
+          "TRANSPONDER",
+          "AS REQUIRED"
+        ],
+        [
+          "DOORS",
+          "AS REQUIRED"
+        ]
       ]
-    ]
-  },
-  {
-    "title": "SECURE AIRCRAFT",
-    "items": [
-      [
-        "IRS (L & R)",
-        "OFF"
-      ],
-      [
-        "EMER EXIT LIGHTS",
-        "OFF"
-      ],
-      [
-        "TRIM AIR",
-        "OFF"
-      ],
-      [
-        "RECIRC FAN",
-        "OFF"
-      ],
-      [
-        "PACKS (L & R)",
-        "OFF"
-      ],
-      [
-        "ISOLATION VALVE",
-        "OPEN"
-      ],
-      [
-        "LOGO LIGHTS",
-        "OFF"
-      ],
-      [
-        "POSITION LIGHTS",
-        "OFF"
-      ],
-      [
-        "WINDOW HEAT",
-        "OFF"
-      ],
-      [
-        "CABIN/UTILITY",
-        "OFF"
-      ],
-      [
-        "IFE PASS SEAT POWER",
-        "OFF"
-      ],
-      [
-        "APU / GROUND POWER",
-        "OFF"
-      ],
-      [
-        "APU SHUTDOWN",
-        "COMPLETE"
-      ],
-      [
-        "BATTERY OFF DELAY",
-        "COMPLETE"
-      ],
-      [
-        "BATTERY",
-        "OFF"
+    },
+    {
+      "title": "SECURE AIRCRAFT",
+      "items": [
+        [
+          "IRS (L & R)",
+          "OFF"
+        ],
+        [
+          "EMER EXIT LIGHTS",
+          "OFF"
+        ],
+        [
+          "TRIM AIR",
+          "OFF"
+        ],
+        [
+          "RECIRC FAN",
+          "OFF"
+        ],
+        [
+          "PACKS (L & R)",
+          "OFF"
+        ],
+        [
+          "ISOLATION VALVE",
+          "OPEN"
+        ],
+        [
+          "LOGO LIGHTS",
+          "OFF"
+        ],
+        [
+          "POSITION LIGHTS",
+          "OFF"
+        ],
+        [
+          "WINDOW HEAT",
+          "OFF"
+        ],
+        [
+          "CABIN/UTILITY",
+          "OFF"
+        ],
+        [
+          "IFE PASS SEAT POWER",
+          "OFF"
+        ],
+        [
+          "APU / GROUND POWER",
+          "OFF"
+        ],
+        [
+          "APU SHUTDOWN",
+          "COMPLETE"
+        ],
+        [
+          "BATTERY OFF DELAY",
+          "COMPLETE"
+        ],
+        [
+          "BATTERY",
+          "OFF"
+        ]
       ]
-    ]
-  },
-  {
-    "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"850\" height=\"300\" viewBox=\"0 0 850 300\" role=\"img\" aria-labelledby=\"title desc\">\n<title id=\"title\">Aircraft weight specifications</title>\n<desc id=\"desc\">Weight categories with kilograms and pounds.</desc>\n<rect width=\"850\" height=\"300\" fill=\"white\"/>\n<g fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\">\n<rect x=\"0.75\" y=\"0.75\" width=\"848.5\" height=\"298.5\"/>\n<path d=\"M450 0V300 M660 0V300 M0 50H850 M0 100H850 M0 150H850 M0 200H850 M0 250H850\"/>\n</g>\n<g font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" fill=\"#000\">\n<text x=\"18\" y=\"25\" dominant-baseline=\"central\" text-anchor=\"start\" font-weight=\"700\">Weight Category</text>\n<text x=\"555\" y=\"25\" dominant-baseline=\"central\" text-anchor=\"middle\" font-weight=\"700\">Kilograms (kg)</text>\n<text x=\"755\" y=\"25\" dominant-baseline=\"central\" text-anchor=\"middle\" font-weight=\"700\">Pounds (lbs)</text>\n<text x=\"18\" y=\"75\" dominant-baseline=\"central\" text-anchor=\"start\">Maximum Takeoff Weight (MTOW)</text>\n<text x=\"555\" y=\"75\" dominant-baseline=\"central\" text-anchor=\"middle\">82,190 kg</text>\n<text x=\"755\" y=\"75\" dominant-baseline=\"central\" text-anchor=\"middle\">181,198 lbs</text>\n<text x=\"18\" y=\"125\" dominant-baseline=\"central\" text-anchor=\"start\">Maximum Landing Weight (MLW)</text>\n<text x=\"555\" y=\"125\" dominant-baseline=\"central\" text-anchor=\"middle\">69,308 kg</text>\n<text x=\"755\" y=\"125\" dominant-baseline=\"central\" text-anchor=\"middle\">152,798 lbs</text>\n<text x=\"18\" y=\"175\" dominant-baseline=\"central\" text-anchor=\"start\">Maximum Zero Fuel Weight (MZFW)</text>\n<text x=\"555\" y=\"175\" dominant-baseline=\"central\" text-anchor=\"middle\">65,952 kg</text>\n<text x=\"755\" y=\"175\" dominant-baseline=\"central\" text-anchor=\"middle\">145,399 lbs</text>\n<text x=\"18\" y=\"225\" dominant-baseline=\"central\" text-anchor=\"start\">Operating Empty Weight (OEW)</text>\n<text x=\"555\" y=\"225\" dominant-baseline=\"central\" text-anchor=\"middle\">45,069 kg</text>\n<text x=\"755\" y=\"225\" dominant-baseline=\"central\" text-anchor=\"middle\">99,360 lbs</text>\n<text x=\"18\" y=\"275\" dominant-baseline=\"central\" text-anchor=\"start\">Maximum Payload</text>\n<text x=\"555\" y=\"275\" dominant-baseline=\"central\" text-anchor=\"middle\">20,727 kg</text>\n<text x=\"755\" y=\"275\" dominant-baseline=\"central\" text-anchor=\"middle\">45,694 lbs</text>\n</g>\n</svg>",
-    "ratio": 0.35294117647058826,
-    "wide": false
-  },
-  {
-    "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"997\" height=\"878\" viewBox=\"0 0 997 878\">\n<title>Payload and range chart</title>\n<style>text{font-family:\"DejaVu Sans Mono\",monospace;font-size:19px;fill:#191919} .small{font-size:17px} .grid{stroke:#999;stroke-width:1.2} .curve{stroke:#353535;stroke-width:1.5;fill:none} .axis{stroke:#191919;stroke-width:2.5}</style>\n<line x1=\"156\" y1=\"27\" x2=\"156\" y2=\"795\" class=\"grid\"/>\n<line x1=\"215.215\" y1=\"27\" x2=\"215.215\" y2=\"795\" class=\"grid\"/>\n<line x1=\"274.43\" y1=\"27\" x2=\"274.43\" y2=\"795\" class=\"grid\"/>\n<line x1=\"333.645\" y1=\"27\" x2=\"333.645\" y2=\"795\" class=\"grid\"/>\n<line x1=\"392.86\" y1=\"27\" x2=\"392.86\" y2=\"795\" class=\"grid\"/>\n<line x1=\"452.075\" y1=\"27\" x2=\"452.075\" y2=\"795\" class=\"grid\"/>\n<line x1=\"511.29\" y1=\"27\" x2=\"511.29\" y2=\"795\" class=\"grid\"/>\n<line x1=\"570.505\" y1=\"27\" x2=\"570.505\" y2=\"795\" class=\"grid\"/>\n<line x1=\"629.72\" y1=\"27\" x2=\"629.72\" y2=\"795\" class=\"grid\"/>\n<line x1=\"688.935\" y1=\"27\" x2=\"688.935\" y2=\"795\" class=\"grid\"/>\n<line x1=\"748.15\" y1=\"27\" x2=\"748.15\" y2=\"795\" class=\"grid\"/>\n<line x1=\"807.365\" y1=\"27\" x2=\"807.365\" y2=\"795\" class=\"grid\"/>\n<line x1=\"866.58\" y1=\"27\" x2=\"866.58\" y2=\"795\" class=\"grid\"/>\n<line x1=\"925.795\" y1=\"27\" x2=\"925.795\" y2=\"795\" class=\"grid\"/>\n<line x1=\"985.01\" y1=\"27\" x2=\"985.01\" y2=\"795\" class=\"grid\"/>\n<line x1=\"156\" y1=\"795\" x2=\"985\" y2=\"795\" class=\"grid\"/>\n<text x=\"143\" y=\"802\" text-anchor=\"end\" style=\"font-size:19px\">90</text>\n<line x1=\"156\" y1=\"735.923\" x2=\"985\" y2=\"735.923\" class=\"grid\"/>\n<text x=\"143\" y=\"742.923\" text-anchor=\"end\" style=\"font-size:19px\">95</text>\n<line x1=\"156\" y1=\"676.846\" x2=\"985\" y2=\"676.846\" class=\"grid\"/>\n<text x=\"143\" y=\"683.846\" text-anchor=\"end\" style=\"font-size:19px\">100</text>\n<line x1=\"156\" y1=\"617.769\" x2=\"985\" y2=\"617.769\" class=\"grid\"/>\n<text x=\"143\" y=\"624.769\" text-anchor=\"end\" style=\"font-size:19px\">105</text>\n<line x1=\"156\" y1=\"558.692\" x2=\"985\" y2=\"558.692\" class=\"grid\"/>\n<text x=\"143\" y=\"565.692\" text-anchor=\"end\" style=\"font-size:19px\">110</text>\n<line x1=\"156\" y1=\"499.615\" x2=\"985\" y2=\"499.615\" class=\"grid\"/>\n<text x=\"143\" y=\"506.615\" text-anchor=\"end\" style=\"font-size:19px\">115</text>\n<line x1=\"156\" y1=\"440.538\" x2=\"985\" y2=\"440.538\" class=\"grid\"/>\n<text x=\"143\" y=\"447.538\" text-anchor=\"end\" style=\"font-size:19px\">120</text>\n<line x1=\"156\" y1=\"381.461\" x2=\"985\" y2=\"381.461\" class=\"grid\"/>\n<text x=\"143\" y=\"388.461\" text-anchor=\"end\" style=\"font-size:19px\">125</text>\n<line x1=\"156\" y1=\"322.384\" x2=\"985\" y2=\"322.384\" class=\"grid\"/>\n<text x=\"143\" y=\"329.384\" text-anchor=\"end\" style=\"font-size:19px\">130</text>\n<line x1=\"156\" y1=\"263.307\" x2=\"985\" y2=\"263.307\" class=\"grid\"/>\n<text x=\"143\" y=\"270.307\" text-anchor=\"end\" style=\"font-size:19px\">135</text>\n<line x1=\"156\" y1=\"204.23\" x2=\"985\" y2=\"204.23\" class=\"grid\"/>\n<text x=\"143\" y=\"211.23\" text-anchor=\"end\" style=\"font-size:19px\">140</text>\n<line x1=\"156\" y1=\"145.153\" x2=\"985\" y2=\"145.153\" class=\"grid\"/>\n<text x=\"143\" y=\"152.153\" text-anchor=\"end\" style=\"font-size:19px\">145</text>\n<line x1=\"156\" y1=\"86.076\" x2=\"985\" y2=\"86.076\" class=\"grid\"/>\n<text x=\"143\" y=\"93.076\" text-anchor=\"end\" style=\"font-size:19px\">150</text>\n<line x1=\"156\" y1=\"26.999\" x2=\"985\" y2=\"26.999\" class=\"grid\"/>\n<text x=\"143\" y=\"33.999\" text-anchor=\"end\" style=\"font-size:19px\">155</text>\n<text x=\"156\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">0</text>\n<text x=\"274.43\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">1</text>\n<text x=\"392.86\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">2</text>\n<text x=\"511.29\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">3</text>\n<text x=\"629.72\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">4</text>\n<text x=\"748.15\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">5</text>\n<text x=\"866.58\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">6</text>\n<text x=\"985.01\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">7</text>\n<line x1=\"156\" y1=\"27\" x2=\"156\" y2=\"795\" class=\"axis\"/>\n<line x1=\"156\" y1=\"795\" x2=\"985\" y2=\"795\" class=\"axis\"/>\n<line x1=\"95\" y1=\"27\" x2=\"95\" y2=\"795\" class=\"axis\"/>\n<line x1=\"81\" y1=\"686\" x2=\"94\" y2=\"686\" class=\"grid\"/>\n<text x=\"75\" y=\"693\" text-anchor=\"end\" style=\"font-size:19px\">45</text>\n<line x1=\"81\" y1=\"556\" x2=\"94\" y2=\"556\" class=\"grid\"/>\n<text x=\"75\" y=\"563\" text-anchor=\"end\" style=\"font-size:19px\">50</text>\n<line x1=\"81\" y1=\"425\" x2=\"94\" y2=\"425\" class=\"grid\"/>\n<text x=\"75\" y=\"432\" text-anchor=\"end\" style=\"font-size:19px\">55</text>\n<line x1=\"81\" y1=\"295\" x2=\"94\" y2=\"295\" class=\"grid\"/>\n<text x=\"75\" y=\"302\" text-anchor=\"end\" style=\"font-size:19px\">60</text>\n<line x1=\"81\" y1=\"165\" x2=\"94\" y2=\"165\" class=\"grid\"/>\n<text x=\"75\" y=\"172\" text-anchor=\"end\" style=\"font-size:19px\">65</text>\n<line x1=\"81\" y1=\"35\" x2=\"94\" y2=\"35\" class=\"grid\"/>\n<text x=\"75\" y=\"42\" text-anchor=\"end\" style=\"font-size:19px\">70</text>\n<text x=\"18\" y=\"390\" text-anchor=\"middle\" style=\"font-size:19px\" transform=\"rotate(-90 18 390)\">CREW PLUS PAYLOAD</text>\n<text x=\"48\" y=\"390\" text-anchor=\"middle\" style=\"font-size:19px\" transform=\"rotate(-90 48 390)\">(1,000 KILOGRAMS)</text>\n<text x=\"182\" y=\"103\" text-anchor=\"start\" style=\"font-size:19px\">MAX ZERO FUEL WEIGHT =</text>\n<text x=\"182\" y=\"132\" text-anchor=\"start\" style=\"font-size:19px\">145,400 LB (65,952 KG)</text>\n<text x=\"569\" y=\"852\" text-anchor=\"middle\" style=\"font-size:19px\">1,000 NAUTICAL MILES</text>\n<text x=\"569\" y=\"877\" text-anchor=\"middle\" style=\"font-size:19px\">RANGE</text>\n<text x=\"181\" y=\"382\" text-anchor=\"middle\" style=\"font-size:19px\" transform=\"rotate(-90 181 382)\">1,000 POUNDS</text>\n<line x1=\"156\" y1=\"140\" x2=\"461\" y2=\"140\" class=\"curve\"/>\n<line x1=\"156\" y1=\"676\" x2=\"180\" y2=\"698\" class=\"curve\"/>\n<text x=\"151.837\" y=\"696.602\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(42.5104 151.837 696.602)\">105</text>\n<text x=\"196.066\" y=\"737.146\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(42.5104 196.066 737.146)\">(47.6)</text>\n<line x1=\"156\" y1=\"624\" x2=\"245\" y2=\"698\" class=\"curve\"/>\n<text x=\"169.492\" y=\"658.627\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.7422 169.492 658.627)\">110</text>\n<text x=\"215.628\" y=\"696.987\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.7422 215.628 696.987)\">(49.9)</text>\n<line x1=\"156\" y1=\"568\" x2=\"311\" y2=\"696\" class=\"curve\"/>\n<text x=\"197.538\" y=\"625.647\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.5501 197.538 625.647)\">115</text>\n<text x=\"243.803\" y=\"663.852\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.5501 243.803 663.852)\">(52.2)</text>\n<line x1=\"156\" y1=\"513\" x2=\"379\" y2=\"696\" class=\"curve\"/>\n<text x=\"225.581\" y=\"593.385\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.3733 225.581 593.385)\">120</text>\n<text x=\"271.963\" y=\"631.448\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.3733 271.963 631.448)\">(54.4)</text>\n<line x1=\"156\" y1=\"455\" x2=\"446\" y2=\"696\" class=\"curve\"/>\n<text x=\"252.495\" y=\"558.595\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.7278 252.495 558.595)\">125</text>\n<text x=\"298.641\" y=\"596.944\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.7278 298.641 596.944)\">(56.7)</text>\n<line x1=\"156\" y1=\"395\" x2=\"510\" y2=\"696\" class=\"curve\"/>\n<text x=\"275.34\" y=\"520.1\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.3739 275.34 520.1)\">130</text>\n<text x=\"321.05\" y=\"558.966\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.3739 321.05 558.966)\">(59.0)</text>\n<line x1=\"156\" y1=\"337\" x2=\"572\" y2=\"696\" class=\"curve\"/>\n<text x=\"303.24\" y=\"487.841\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.7936 303.24 487.841)\">135</text>\n<text x=\"348.664\" y=\"527.041\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.7936 348.664 527.041)\">(61.2)</text>\n<line x1=\"156\" y1=\"279\" x2=\"638\" y2=\"696\" class=\"curve\"/>\n<text x=\"325.223\" y=\"449.204\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.8646 325.223 449.204)\">140</text>\n<text x=\"370.599\" y=\"488.46\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.8646 370.599 488.46)\">(63.5)</text>\n<line x1=\"156\" y1=\"219\" x2=\"700\" y2=\"696\" class=\"curve\"/>\n<text x=\"342.133\" y=\"406.148\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2455 342.133 406.148)\">145</text>\n<text x=\"387.246\" y=\"445.705\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2455 387.246 445.705)\">(65.8)</text>\n<line x1=\"156\" y1=\"161\" x2=\"762\" y2=\"696\" class=\"curve\"/>\n<text x=\"363.087\" y=\"367.835\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.4393 363.087 367.835)\">150</text>\n<text x=\"408.067\" y=\"407.545\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.4393 408.067 407.545)\">(68.0)</text>\n<line x1=\"190\" y1=\"140\" x2=\"824\" y2=\"696\" class=\"curve\"/>\n<text x=\"385.132\" y=\"335.066\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2498 385.132 335.066)\">155</text>\n<text x=\"430.242\" y=\"374.627\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2498 430.242 374.627)\">(70.3)</text>\n<line x1=\"244\" y1=\"140\" x2=\"888\" y2=\"696\" class=\"curve\"/>\n<text x=\"406.237\" y=\"303.848\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.8058 406.237 303.848)\">160</text>\n<text x=\"451.653\" y=\"343.058\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.8058 451.653 343.058)\">(72.6)</text>\n<line x1=\"297\" y1=\"140\" x2=\"926\" y2=\"692\" class=\"curve\"/>\n<text x=\"427.127\" y=\"278.146\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2697 427.127 278.146)\">165</text>\n<text x=\"472.224\" y=\"317.722\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2697 472.224 317.722)\">(74.8)</text>\n<line x1=\"350\" y1=\"140\" x2=\"922\" y2=\"642\" class=\"curve\"/>\n<text x=\"448.127\" y=\"250.067\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2709 448.127 250.067)\">170</text>\n<text x=\"493.223\" y=\"289.644\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2709 493.223 289.644)\">(77.1)</text>\n<line x1=\"402\" y1=\"140\" x2=\"896\" y2=\"579\" class=\"curve\"/>\n<text x=\"469.043\" y=\"223.659\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.6263 469.043 223.659)\">175</text>\n<text x=\"513.893\" y=\"263.516\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.6263 513.893 263.516)\">(79.4)</text>\n<line x1=\"445\" y1=\"140\" x2=\"875\" y2=\"541\" class=\"curve\"/>\n<text x=\"486.724\" y=\"203.522\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(43.0013 486.724 203.522)\">180</text>\n<text x=\"530.604\" y=\"244.443\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(43.0013 530.604 244.443)\">(81.6)</text>\n<line x1=\"461\" y1=\"140\" x2=\"891\" y2=\"541\" class=\"curve\"/>\n<text x=\"579\" y=\"103\" text-anchor=\"start\" style=\"font-size:19px\" transform=\"rotate(45 579 103)\">BRAKE RELEASE</text>\n<text x=\"565\" y=\"130\" text-anchor=\"start\" style=\"font-size:19px\" transform=\"rotate(45 565 130)\">GROSS WEIGHT</text>\n<text x=\"550\" y=\"158\" text-anchor=\"start\" style=\"font-size:19px\" transform=\"rotate(45 550 158)\">(× 1,000)</text>\n<text x=\"540\" y=\"172\" text-anchor=\"start\" style=\"font-size:19px\" transform=\"rotate(45 540 172)\">LB</text>\n<text x=\"592\" y=\"222\" text-anchor=\"start\" style=\"font-size:19px\" transform=\"rotate(45 592 222)\">KG</text>\n<text x=\"505.728\" y=\"176.242\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(43.0013 505.728 176.242)\">181.2</text>\n<text x=\"561.31\" y=\"228.075\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(43.0013 561.31 228.075)\">(82.2)</text>\n<defs><clipPath id=\"fuel-boundary\"><polygon points=\"0,-274.98837209302326 997,654.7720930232558 997,878 0,878\"/></clipPath></defs>\n<g clip-path=\"url(#fuel-boundary)\">\n<line x1=\"564.25\" y1=\"251.207\" x2=\"671\" y2=\"696\" class=\"curve\"/>\n<line x1=\"605.142\" y1=\"289.342\" x2=\"712.5\" y2=\"696\" class=\"curve\"/>\n<line x1=\"642.368\" y1=\"324.057\" x2=\"748\" y2=\"696\" class=\"curve\"/>\n<line x1=\"685.491\" y1=\"364.272\" x2=\"787\" y2=\"696\" class=\"curve\"/>\n<line x1=\"731.276\" y1=\"406.969\" x2=\"825.5\" y2=\"696\" class=\"curve\"/>\n<line x1=\"775.153\" y1=\"447.887\" x2=\"861\" y2=\"696\" class=\"curve\"/>\n<line x1=\"825.31\" y1=\"494.661\" x2=\"899\" y2=\"696\" class=\"curve\"/>\n<line x1=\"876.595\" y1=\"542.487\" x2=\"938\" y2=\"696\" class=\"curve\"/>\n</g>\n<text x=\"642.25\" y=\"559.067\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(76.5043 642.25 559.067)\">45,694</text>\n<text x=\"659.519\" y=\"631.023\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(76.5043 659.519 631.023)\">(20,730)</text>\n<text x=\"680.463\" y=\"558.979\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(75.2113 680.463 558.979)\">49,145</text>\n<text x=\"699.352\" y=\"630.528\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(75.2113 699.352 630.528)\">(22,293)</text>\n<text x=\"713.224\" y=\"558.907\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(74.1455 713.224 558.907)\">52,200</text>\n<text x=\"733.44\" y=\"630.092\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(74.1455 733.44 630.092)\">(23,682)</text>\n<text x=\"749.209\" y=\"558.83\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(72.9859 749.209 558.83)\">55,677</text>\n<text x=\"770.862\" y=\"629.591\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(72.9859 770.862 629.591)\">(25,254)</text>\n<text x=\"784.967\" y=\"558.76\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(71.944 784.967 558.76)\">58,788</text>\n<text x=\"807.903\" y=\"629.116\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(71.944 807.903 629.116)\">(26,667)</text>\n<text x=\"817.724\" y=\"558.692\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(70.9144 817.724 558.692)\">62,484</text>\n<text x=\"841.921\" y=\"628.624\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(70.9144 841.921 628.624)\">(28,341)</text>\n<text x=\"852.98\" y=\"558.625\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(69.8974 852.98 558.625)\">66,388</text>\n<text x=\"878.414\" y=\"628.117\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(69.8974 878.414 628.117)\">(30,044)</text>\n<text x=\"887.314\" y=\"558.514\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(68.1986 887.314 558.514)\">69,640</text>\n<text x=\"914.797\" y=\"627.222\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(68.1986 914.797 627.222)\">(31,588)</text>\n<text x=\"598\" y=\"578\" text-anchor=\"start\" style=\"font-size:16px\" transform=\"rotate(69 598 578)\">FUEL CAPACITY</text>\n<text x=\"621\" y=\"576\" text-anchor=\"start\" style=\"font-size:16px\" transform=\"rotate(69 621 576)\">LB</text>\n<text x=\"642\" y=\"640\" text-anchor=\"start\" style=\"font-size:16px\" transform=\"rotate(69 642 640)\">(KG)</text>\n</svg>",
-    "ratio": 0.880641925777332,
-    "wide": false
-  }
-]
+    },
+    {
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"850\" height=\"300\" viewBox=\"0 0 850 300\" role=\"img\" aria-labelledby=\"title desc\">\n<title id=\"title\">Aircraft weight specifications</title>\n<desc id=\"desc\">Weight categories with kilograms and pounds.</desc>\n<rect width=\"850\" height=\"300\" fill=\"white\"/>\n<g fill=\"none\" stroke=\"#000\" stroke-width=\"1.5\">\n<rect x=\"0.75\" y=\"0.75\" width=\"848.5\" height=\"298.5\"/>\n<path d=\"M450 0V300 M660 0V300 M0 50H850 M0 100H850 M0 150H850 M0 200H850 M0 250H850\"/>\n</g>\n<g font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" fill=\"#000\">\n<text x=\"18\" y=\"25\" dominant-baseline=\"central\" text-anchor=\"start\" font-weight=\"700\">Weight Category</text>\n<text x=\"555\" y=\"25\" dominant-baseline=\"central\" text-anchor=\"middle\" font-weight=\"700\">Kilograms (kg)</text>\n<text x=\"755\" y=\"25\" dominant-baseline=\"central\" text-anchor=\"middle\" font-weight=\"700\">Pounds (lbs)</text>\n<text x=\"18\" y=\"75\" dominant-baseline=\"central\" text-anchor=\"start\">Maximum Takeoff Weight (MTOW)</text>\n<text x=\"555\" y=\"75\" dominant-baseline=\"central\" text-anchor=\"middle\">82,190 kg</text>\n<text x=\"755\" y=\"75\" dominant-baseline=\"central\" text-anchor=\"middle\">181,198 lbs</text>\n<text x=\"18\" y=\"125\" dominant-baseline=\"central\" text-anchor=\"start\">Maximum Landing Weight (MLW)</text>\n<text x=\"555\" y=\"125\" dominant-baseline=\"central\" text-anchor=\"middle\">69,308 kg</text>\n<text x=\"755\" y=\"125\" dominant-baseline=\"central\" text-anchor=\"middle\">152,798 lbs</text>\n<text x=\"18\" y=\"175\" dominant-baseline=\"central\" text-anchor=\"start\">Maximum Zero Fuel Weight (MZFW)</text>\n<text x=\"555\" y=\"175\" dominant-baseline=\"central\" text-anchor=\"middle\">65,952 kg</text>\n<text x=\"755\" y=\"175\" dominant-baseline=\"central\" text-anchor=\"middle\">145,399 lbs</text>\n<text x=\"18\" y=\"225\" dominant-baseline=\"central\" text-anchor=\"start\">Operating Empty Weight (OEW)</text>\n<text x=\"555\" y=\"225\" dominant-baseline=\"central\" text-anchor=\"middle\">45,069 kg</text>\n<text x=\"755\" y=\"225\" dominant-baseline=\"central\" text-anchor=\"middle\">99,360 lbs</text>\n<text x=\"18\" y=\"275\" dominant-baseline=\"central\" text-anchor=\"start\">Maximum Payload</text>\n<text x=\"555\" y=\"275\" dominant-baseline=\"central\" text-anchor=\"middle\">20,727 kg</text>\n<text x=\"755\" y=\"275\" dominant-baseline=\"central\" text-anchor=\"middle\">45,694 lbs</text>\n</g>\n</svg>",
+      "ratio": 0.35294117647058826,
+      "wide": false
+    },
+    {
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"997\" height=\"878\" viewBox=\"0 0 997 878\">\n<title>Payload and range chart</title>\n<style>text{font-family:\"DejaVu Sans Mono\",monospace;font-size:19px;fill:#191919} .small{font-size:17px} .grid{stroke:#999;stroke-width:1.2} .curve{stroke:#353535;stroke-width:1.5;fill:none} .axis{stroke:#191919;stroke-width:2.5}</style>\n<line x1=\"156\" y1=\"27\" x2=\"156\" y2=\"795\" class=\"grid\"/>\n<line x1=\"215.215\" y1=\"27\" x2=\"215.215\" y2=\"795\" class=\"grid\"/>\n<line x1=\"274.43\" y1=\"27\" x2=\"274.43\" y2=\"795\" class=\"grid\"/>\n<line x1=\"333.645\" y1=\"27\" x2=\"333.645\" y2=\"795\" class=\"grid\"/>\n<line x1=\"392.86\" y1=\"27\" x2=\"392.86\" y2=\"795\" class=\"grid\"/>\n<line x1=\"452.075\" y1=\"27\" x2=\"452.075\" y2=\"795\" class=\"grid\"/>\n<line x1=\"511.29\" y1=\"27\" x2=\"511.29\" y2=\"795\" class=\"grid\"/>\n<line x1=\"570.505\" y1=\"27\" x2=\"570.505\" y2=\"795\" class=\"grid\"/>\n<line x1=\"629.72\" y1=\"27\" x2=\"629.72\" y2=\"795\" class=\"grid\"/>\n<line x1=\"688.935\" y1=\"27\" x2=\"688.935\" y2=\"795\" class=\"grid\"/>\n<line x1=\"748.15\" y1=\"27\" x2=\"748.15\" y2=\"795\" class=\"grid\"/>\n<line x1=\"807.365\" y1=\"27\" x2=\"807.365\" y2=\"795\" class=\"grid\"/>\n<line x1=\"866.58\" y1=\"27\" x2=\"866.58\" y2=\"795\" class=\"grid\"/>\n<line x1=\"925.795\" y1=\"27\" x2=\"925.795\" y2=\"795\" class=\"grid\"/>\n<line x1=\"985.01\" y1=\"27\" x2=\"985.01\" y2=\"795\" class=\"grid\"/>\n<line x1=\"156\" y1=\"795\" x2=\"985\" y2=\"795\" class=\"grid\"/>\n<text x=\"143\" y=\"802\" text-anchor=\"end\" style=\"font-size:19px\">90</text>\n<line x1=\"156\" y1=\"735.923\" x2=\"985\" y2=\"735.923\" class=\"grid\"/>\n<text x=\"143\" y=\"742.923\" text-anchor=\"end\" style=\"font-size:19px\">95</text>\n<line x1=\"156\" y1=\"676.846\" x2=\"985\" y2=\"676.846\" class=\"grid\"/>\n<text x=\"143\" y=\"683.846\" text-anchor=\"end\" style=\"font-size:19px\">100</text>\n<line x1=\"156\" y1=\"617.769\" x2=\"985\" y2=\"617.769\" class=\"grid\"/>\n<text x=\"143\" y=\"624.769\" text-anchor=\"end\" style=\"font-size:19px\">105</text>\n<line x1=\"156\" y1=\"558.692\" x2=\"985\" y2=\"558.692\" class=\"grid\"/>\n<text x=\"143\" y=\"565.692\" text-anchor=\"end\" style=\"font-size:19px\">110</text>\n<line x1=\"156\" y1=\"499.615\" x2=\"985\" y2=\"499.615\" class=\"grid\"/>\n<text x=\"143\" y=\"506.615\" text-anchor=\"end\" style=\"font-size:19px\">115</text>\n<line x1=\"156\" y1=\"440.538\" x2=\"985\" y2=\"440.538\" class=\"grid\"/>\n<text x=\"143\" y=\"447.538\" text-anchor=\"end\" style=\"font-size:19px\">120</text>\n<line x1=\"156\" y1=\"381.461\" x2=\"985\" y2=\"381.461\" class=\"grid\"/>\n<text x=\"143\" y=\"388.461\" text-anchor=\"end\" style=\"font-size:19px\">125</text>\n<line x1=\"156\" y1=\"322.384\" x2=\"985\" y2=\"322.384\" class=\"grid\"/>\n<text x=\"143\" y=\"329.384\" text-anchor=\"end\" style=\"font-size:19px\">130</text>\n<line x1=\"156\" y1=\"263.307\" x2=\"985\" y2=\"263.307\" class=\"grid\"/>\n<text x=\"143\" y=\"270.307\" text-anchor=\"end\" style=\"font-size:19px\">135</text>\n<line x1=\"156\" y1=\"204.23\" x2=\"985\" y2=\"204.23\" class=\"grid\"/>\n<text x=\"143\" y=\"211.23\" text-anchor=\"end\" style=\"font-size:19px\">140</text>\n<line x1=\"156\" y1=\"145.153\" x2=\"985\" y2=\"145.153\" class=\"grid\"/>\n<text x=\"143\" y=\"152.153\" text-anchor=\"end\" style=\"font-size:19px\">145</text>\n<line x1=\"156\" y1=\"86.076\" x2=\"985\" y2=\"86.076\" class=\"grid\"/>\n<text x=\"143\" y=\"93.076\" text-anchor=\"end\" style=\"font-size:19px\">150</text>\n<line x1=\"156\" y1=\"26.999\" x2=\"985\" y2=\"26.999\" class=\"grid\"/>\n<text x=\"143\" y=\"33.999\" text-anchor=\"end\" style=\"font-size:19px\">155</text>\n<text x=\"156\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">0</text>\n<text x=\"274.43\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">1</text>\n<text x=\"392.86\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">2</text>\n<text x=\"511.29\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">3</text>\n<text x=\"629.72\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">4</text>\n<text x=\"748.15\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">5</text>\n<text x=\"866.58\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">6</text>\n<text x=\"985.01\" y=\"825\" text-anchor=\"middle\" style=\"font-size:19px\">7</text>\n<line x1=\"156\" y1=\"27\" x2=\"156\" y2=\"795\" class=\"axis\"/>\n<line x1=\"156\" y1=\"795\" x2=\"985\" y2=\"795\" class=\"axis\"/>\n<line x1=\"95\" y1=\"27\" x2=\"95\" y2=\"795\" class=\"axis\"/>\n<line x1=\"81\" y1=\"686\" x2=\"94\" y2=\"686\" class=\"grid\"/>\n<text x=\"75\" y=\"693\" text-anchor=\"end\" style=\"font-size:19px\">45</text>\n<line x1=\"81\" y1=\"556\" x2=\"94\" y2=\"556\" class=\"grid\"/>\n<text x=\"75\" y=\"563\" text-anchor=\"end\" style=\"font-size:19px\">50</text>\n<line x1=\"81\" y1=\"425\" x2=\"94\" y2=\"425\" class=\"grid\"/>\n<text x=\"75\" y=\"432\" text-anchor=\"end\" style=\"font-size:19px\">55</text>\n<line x1=\"81\" y1=\"295\" x2=\"94\" y2=\"295\" class=\"grid\"/>\n<text x=\"75\" y=\"302\" text-anchor=\"end\" style=\"font-size:19px\">60</text>\n<line x1=\"81\" y1=\"165\" x2=\"94\" y2=\"165\" class=\"grid\"/>\n<text x=\"75\" y=\"172\" text-anchor=\"end\" style=\"font-size:19px\">65</text>\n<line x1=\"81\" y1=\"35\" x2=\"94\" y2=\"35\" class=\"grid\"/>\n<text x=\"75\" y=\"42\" text-anchor=\"end\" style=\"font-size:19px\">70</text>\n<text x=\"18\" y=\"390\" text-anchor=\"middle\" style=\"font-size:19px\" transform=\"rotate(-90 18 390)\">CREW PLUS PAYLOAD</text>\n<text x=\"48\" y=\"390\" text-anchor=\"middle\" style=\"font-size:19px\" transform=\"rotate(-90 48 390)\">(1,000 KILOGRAMS)</text>\n<text x=\"182\" y=\"103\" text-anchor=\"start\" style=\"font-size:19px\">MAX ZERO FUEL WEIGHT =</text>\n<text x=\"182\" y=\"132\" text-anchor=\"start\" style=\"font-size:19px\">145,400 LB (65,952 KG)</text>\n<text x=\"569\" y=\"852\" text-anchor=\"middle\" style=\"font-size:19px\">1,000 NAUTICAL MILES</text>\n<text x=\"569\" y=\"877\" text-anchor=\"middle\" style=\"font-size:19px\">RANGE</text>\n<text x=\"181\" y=\"382\" text-anchor=\"middle\" style=\"font-size:19px\" transform=\"rotate(-90 181 382)\">1,000 POUNDS</text>\n<line x1=\"156\" y1=\"140\" x2=\"461\" y2=\"140\" class=\"curve\"/>\n<line x1=\"156\" y1=\"676\" x2=\"180\" y2=\"698\" class=\"curve\"/>\n<text x=\"151.837\" y=\"696.602\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(42.5104 151.837 696.602)\">105</text>\n<text x=\"196.066\" y=\"737.146\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(42.5104 196.066 737.146)\">(47.6)</text>\n<line x1=\"156\" y1=\"624\" x2=\"245\" y2=\"698\" class=\"curve\"/>\n<text x=\"169.492\" y=\"658.627\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.7422 169.492 658.627)\">110</text>\n<text x=\"215.628\" y=\"696.987\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.7422 215.628 696.987)\">(49.9)</text>\n<line x1=\"156\" y1=\"568\" x2=\"311\" y2=\"696\" class=\"curve\"/>\n<text x=\"197.538\" y=\"625.647\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.5501 197.538 625.647)\">115</text>\n<text x=\"243.803\" y=\"663.852\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.5501 243.803 663.852)\">(52.2)</text>\n<line x1=\"156\" y1=\"513\" x2=\"379\" y2=\"696\" class=\"curve\"/>\n<text x=\"225.581\" y=\"593.385\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.3733 225.581 593.385)\">120</text>\n<text x=\"271.963\" y=\"631.448\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.3733 271.963 631.448)\">(54.4)</text>\n<line x1=\"156\" y1=\"455\" x2=\"446\" y2=\"696\" class=\"curve\"/>\n<text x=\"252.495\" y=\"558.595\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.7278 252.495 558.595)\">125</text>\n<text x=\"298.641\" y=\"596.944\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(39.7278 298.641 596.944)\">(56.7)</text>\n<line x1=\"156\" y1=\"395\" x2=\"510\" y2=\"696\" class=\"curve\"/>\n<text x=\"275.34\" y=\"520.1\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.3739 275.34 520.1)\">130</text>\n<text x=\"321.05\" y=\"558.966\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.3739 321.05 558.966)\">(59.0)</text>\n<line x1=\"156\" y1=\"337\" x2=\"572\" y2=\"696\" class=\"curve\"/>\n<text x=\"303.24\" y=\"487.841\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.7936 303.24 487.841)\">135</text>\n<text x=\"348.664\" y=\"527.041\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.7936 348.664 527.041)\">(61.2)</text>\n<line x1=\"156\" y1=\"279\" x2=\"638\" y2=\"696\" class=\"curve\"/>\n<text x=\"325.223\" y=\"449.204\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.8646 325.223 449.204)\">140</text>\n<text x=\"370.599\" y=\"488.46\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.8646 370.599 488.46)\">(63.5)</text>\n<line x1=\"156\" y1=\"219\" x2=\"700\" y2=\"696\" class=\"curve\"/>\n<text x=\"342.133\" y=\"406.148\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2455 342.133 406.148)\">145</text>\n<text x=\"387.246\" y=\"445.705\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2455 387.246 445.705)\">(65.8)</text>\n<line x1=\"156\" y1=\"161\" x2=\"762\" y2=\"696\" class=\"curve\"/>\n<text x=\"363.087\" y=\"367.835\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.4393 363.087 367.835)\">150</text>\n<text x=\"408.067\" y=\"407.545\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.4393 408.067 407.545)\">(68.0)</text>\n<line x1=\"190\" y1=\"140\" x2=\"824\" y2=\"696\" class=\"curve\"/>\n<text x=\"385.132\" y=\"335.066\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2498 385.132 335.066)\">155</text>\n<text x=\"430.242\" y=\"374.627\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2498 430.242 374.627)\">(70.3)</text>\n<line x1=\"244\" y1=\"140\" x2=\"888\" y2=\"696\" class=\"curve\"/>\n<text x=\"406.237\" y=\"303.848\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.8058 406.237 303.848)\">160</text>\n<text x=\"451.653\" y=\"343.058\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(40.8058 451.653 343.058)\">(72.6)</text>\n<line x1=\"297\" y1=\"140\" x2=\"926\" y2=\"692\" class=\"curve\"/>\n<text x=\"427.127\" y=\"278.146\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2697 427.127 278.146)\">165</text>\n<text x=\"472.224\" y=\"317.722\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2697 472.224 317.722)\">(74.8)</text>\n<line x1=\"350\" y1=\"140\" x2=\"922\" y2=\"642\" class=\"curve\"/>\n<text x=\"448.127\" y=\"250.067\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2709 448.127 250.067)\">170</text>\n<text x=\"493.223\" y=\"289.644\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.2709 493.223 289.644)\">(77.1)</text>\n<line x1=\"402\" y1=\"140\" x2=\"896\" y2=\"579\" class=\"curve\"/>\n<text x=\"469.043\" y=\"223.659\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.6263 469.043 223.659)\">175</text>\n<text x=\"513.893\" y=\"263.516\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(41.6263 513.893 263.516)\">(79.4)</text>\n<line x1=\"445\" y1=\"140\" x2=\"875\" y2=\"541\" class=\"curve\"/>\n<text x=\"486.724\" y=\"203.522\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(43.0013 486.724 203.522)\">180</text>\n<text x=\"530.604\" y=\"244.443\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(43.0013 530.604 244.443)\">(81.6)</text>\n<line x1=\"461\" y1=\"140\" x2=\"891\" y2=\"541\" class=\"curve\"/>\n<text x=\"579\" y=\"103\" text-anchor=\"start\" style=\"font-size:19px\" transform=\"rotate(45 579 103)\">BRAKE RELEASE</text>\n<text x=\"565\" y=\"130\" text-anchor=\"start\" style=\"font-size:19px\" transform=\"rotate(45 565 130)\">GROSS WEIGHT</text>\n<text x=\"550\" y=\"158\" text-anchor=\"start\" style=\"font-size:19px\" transform=\"rotate(45 550 158)\">(× 1,000)</text>\n<text x=\"540\" y=\"172\" text-anchor=\"start\" style=\"font-size:19px\" transform=\"rotate(45 540 172)\">LB</text>\n<text x=\"592\" y=\"222\" text-anchor=\"start\" style=\"font-size:19px\" transform=\"rotate(45 592 222)\">KG</text>\n<text x=\"505.728\" y=\"176.242\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(43.0013 505.728 176.242)\">181.2</text>\n<text x=\"561.31\" y=\"228.075\" text-anchor=\"start\" style=\"font-size:17px\" transform=\"rotate(43.0013 561.31 228.075)\">(82.2)</text>\n<defs><clipPath id=\"fuel-boundary\"><polygon points=\"0,-274.98837209302326 997,654.7720930232558 997,878 0,878\"/></clipPath></defs>\n<g clip-path=\"url(#fuel-boundary)\">\n<line x1=\"564.25\" y1=\"251.207\" x2=\"671\" y2=\"696\" class=\"curve\"/>\n<line x1=\"605.142\" y1=\"289.342\" x2=\"712.5\" y2=\"696\" class=\"curve\"/>\n<line x1=\"642.368\" y1=\"324.057\" x2=\"748\" y2=\"696\" class=\"curve\"/>\n<line x1=\"685.491\" y1=\"364.272\" x2=\"787\" y2=\"696\" class=\"curve\"/>\n<line x1=\"731.276\" y1=\"406.969\" x2=\"825.5\" y2=\"696\" class=\"curve\"/>\n<line x1=\"775.153\" y1=\"447.887\" x2=\"861\" y2=\"696\" class=\"curve\"/>\n<line x1=\"825.31\" y1=\"494.661\" x2=\"899\" y2=\"696\" class=\"curve\"/>\n<line x1=\"876.595\" y1=\"542.487\" x2=\"938\" y2=\"696\" class=\"curve\"/>\n</g>\n<text x=\"642.25\" y=\"559.067\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(76.5043 642.25 559.067)\">45,694</text>\n<text x=\"659.519\" y=\"631.023\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(76.5043 659.519 631.023)\">(20,730)</text>\n<text x=\"680.463\" y=\"558.979\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(75.2113 680.463 558.979)\">49,145</text>\n<text x=\"699.352\" y=\"630.528\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(75.2113 699.352 630.528)\">(22,293)</text>\n<text x=\"713.224\" y=\"558.907\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(74.1455 713.224 558.907)\">52,200</text>\n<text x=\"733.44\" y=\"630.092\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(74.1455 733.44 630.092)\">(23,682)</text>\n<text x=\"749.209\" y=\"558.83\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(72.9859 749.209 558.83)\">55,677</text>\n<text x=\"770.862\" y=\"629.591\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(72.9859 770.862 629.591)\">(25,254)</text>\n<text x=\"784.967\" y=\"558.76\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(71.944 784.967 558.76)\">58,788</text>\n<text x=\"807.903\" y=\"629.116\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(71.944 807.903 629.116)\">(26,667)</text>\n<text x=\"817.724\" y=\"558.692\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(70.9144 817.724 558.692)\">62,484</text>\n<text x=\"841.921\" y=\"628.624\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(70.9144 841.921 628.624)\">(28,341)</text>\n<text x=\"852.98\" y=\"558.625\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(69.8974 852.98 558.625)\">66,388</text>\n<text x=\"878.414\" y=\"628.117\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(69.8974 878.414 628.117)\">(30,044)</text>\n<text x=\"887.314\" y=\"558.514\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(68.1986 887.314 558.514)\">69,640</text>\n<text x=\"914.797\" y=\"627.222\" text-anchor=\"start\" style=\"font-size:15px\" transform=\"rotate(68.1986 914.797 627.222)\">(31,588)</text>\n<text x=\"598\" y=\"578\" text-anchor=\"start\" style=\"font-size:16px\" transform=\"rotate(69 598 578)\">FUEL CAPACITY</text>\n<text x=\"621\" y=\"576\" text-anchor=\"start\" style=\"font-size:16px\" transform=\"rotate(69 621 576)\">LB</text>\n<text x=\"642\" y=\"640\" text-anchor=\"start\" style=\"font-size:16px\" transform=\"rotate(69 642 640)\">(KG)</text>\n</svg>",
+      "ratio": 0.880641925777332,
+      "wide": false
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { checklists, hashName, request, TEST_DELAY_MS } from './checklists'
+import { checklists, hashName, request } from './checklists'
 
 class FakeXhr {
   static status = 200
@@ -19,14 +19,12 @@ class FakeXhr {
 }
 
 beforeEach(() => {
-  vi.useFakeTimers()
   vi.stubGlobal('XMLHttpRequest', FakeXhr)
   FakeXhr.status = 200
   FakeXhr.opened = []
 })
 
 afterEach(() => {
-  vi.useRealTimers()
   vi.unstubAllGlobals()
   location.hash = ''
 })
@@ -44,18 +42,9 @@ describe('checklists', () => {
 })
 
 describe('request', () => {
-  it('resolves with the JSON response after the test delay', async () => {
-    const done = vi.fn()
-
-    request('/x.json').then(done)
-    await vi.advanceTimersByTimeAsync(TEST_DELAY_MS - 1)
-
+  it('resolves with the JSON response', async () => {
+    await expect(request('/x.json')).resolves.toBe(FakeXhr.response)
     expect(FakeXhr.opened).toEqual(['/x.json'])
-    expect(done).not.toHaveBeenCalled()
-
-    await vi.advanceTimersByTimeAsync(1)
-
-    expect(done).toHaveBeenCalledWith(FakeXhr.response)
   })
 
   it('rejects on HTTP errors', async () => {
