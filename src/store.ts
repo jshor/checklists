@@ -70,7 +70,14 @@ export function useChecklist() {
 
   return {
     blocks, title, footer, focusId,
+
+    /** True when there are changes that can be undone. */
     canUndo: history.past.length > 0,
+    
+    /** True when there are changes since the checklist was loaded. */
+    dirty: history.past.length > 0,
+
+    /** True when there are changes that can be redone. */
     canRedo: history.future.length > 0,
 
     /** Restores the previous doc. */

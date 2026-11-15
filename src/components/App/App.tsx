@@ -45,10 +45,19 @@ export default function App() {
   const st = useChecklist()
   const fileInput = useRef<HTMLInputElement>(null)
   const [loading, setLoading] = useState(false)
+  const dirty = useRef(st.dirty)
+
+  dirty.current = st.dirty
 
   useEffect(() => {
-    let latest = 0
+    let latest = 0, shownHash = location.hash
     const open = () => {
+      if (latest && dirty.current && !confirm('Discard unsaved changes?')) {
+        return history.replaceState(null, '', shownHash || location.pathname + location.search)
+      }
+
+      shownHash = location.hash
+
       const id = ++latest, url = checklists[hashName()]
 
       setLoading(!!url)
@@ -69,6 +78,19 @@ export default function App() {
   useEffect(() => {
     document.title = st.title || DEFAULT_TITLE
   }, [st.title])
+
+  // warn before leaving or reloading the page with unsaved changes
+  useEffect(() => {
+    if (!st.dirty) return
+
+    const warn = (e: BeforeUnloadEvent) => {
+      e.preventDefault()
+      e.returnValue = ''
+    }
+
+    addEventListener('beforeunload', warn)
+    return () => removeEventListener('beforeunload', warn)
+  }, [st.dirty])
 
   useEffect(() => {
     document.addEventListener('mousedown', blockStrayFocus)

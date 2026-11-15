@@ -136,6 +136,18 @@ describe('useChecklist', () => {
     expect(result.current.blocks).toBe(before)
   })
 
+  it('is dirty after a change until it is undone', () => {
+    const { result } = setup()
+
+    expect(result.current.dirty).toBe(false)
+
+    act(() => result.current.addSection())
+    expect(result.current.dirty).toBe(true)
+
+    act(() => result.current.undo())
+    expect(result.current.dirty).toBe(false)
+  })
+
   it('starts a fresh history on load', () => {
     const { result } = setup()
 
