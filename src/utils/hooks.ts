@@ -91,3 +91,20 @@ export function usePendingFocus(st: Store) {
     st.focus(null)
   }, [st.focusId])
 }
+
+/**
+ * Returns the document's width in px, kept current by a ResizeObserver.
+ */
+export function useDocumentWidth() {
+  const [width, setWidth] = useState(() => document.documentElement.clientWidth)
+
+  useEffect(() => {
+    const root = document.documentElement
+    const observer = new ResizeObserver(() => setWidth(root.clientWidth))
+
+    observer.observe(root)
+    return () => observer.disconnect()
+  }, [])
+
+  return width
+}

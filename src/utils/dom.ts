@@ -65,3 +65,18 @@ export const downloadJson = (text: string, name: string) => {
   a.click()
   URL.revokeObjectURL(a.href)
 }
+
+/**
+ * Returns a CSS custom property's length (e.g. "--page-w") in px.
+ */
+export const px = (name: string) => {
+  const probe = document.body.appendChild(document.createElement('div'))
+
+  probe.style.position = 'absolute'
+  probe.style.width = `var(${name})`
+
+  const width = probe.getBoundingClientRect().width
+
+  probe.remove()
+  return width
+}

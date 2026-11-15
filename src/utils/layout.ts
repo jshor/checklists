@@ -1,4 +1,5 @@
 import type { Band, Block, Fragment, Page, Placed } from '../types'
+import { px } from './dom'
 
 // sizes come from the global CSS variables defined in styles.scss
 export type Sizes = ReturnType<typeof measure>
@@ -8,21 +9,12 @@ let sizes: Sizes
  * Returns the current layout sizes, measuring them from the DOM if necessary.
  */
 function measure() {
-  const probe = document.body.appendChild(document.createElement('div'))
-  const px = (name: string) => {
-    probe.style.width = `var(${name})`;
-    return probe.getBoundingClientRect().width
-  }
   const gap = px('--gap'), fullW = px('--page-w') - 2 * gap
-  const style = {
+
+  return {
     gap, fullW, colW: (fullW - gap) / 2, pageH: px('--page-h') - 2 * gap,
     head: px('--head-h') + 2 * px('--border'), row: px('--row-h'),
   }
-  
-  probe.style.position = 'absolute'
-  probe.remove()
-
-  return style
 }
 
 /**
