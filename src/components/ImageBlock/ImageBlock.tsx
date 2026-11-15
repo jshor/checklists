@@ -2,16 +2,10 @@ import { FoldHorizontal, Trash2, UnfoldHorizontal } from 'lucide-react'
 import { ARROW_KEYS } from '../../constants'
 import { useStore } from '../../store'
 import type { Placed } from '../../types'
+import { imageUrl } from '../../utils/images'
 import Arrows from '../Arrows/Arrows'
 import IconButton from '../IconButton/IconButton'
 import './ImageBlock.scss'
-
-/**
- * Returns a CSS-usable URL for an image source.
- */
-export const imageUrl = (src: string) => {
-  return src.startsWith('<') ? `data:image/svg+xml,${encodeURIComponent(src)}` : src
-}
 
 /**
  * Renders an image with a section-like frame.
