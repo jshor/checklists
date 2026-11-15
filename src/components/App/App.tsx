@@ -1,8 +1,10 @@
-import { useEffect, useRef, type ChangeEvent } from 'react'
+import { useEffect, useRef, useState, type ChangeEvent } from 'react'
 import { DndContext, DragOverlay, closestCenter } from '@dnd-kit/core'
-import { Download, ImagePlus, SquarePlus } from 'lucide-react'
+import { Download, ImagePlus, LoaderCircle, SquarePlus } from 'lucide-react'
 import { StoreContext, toJson, useChecklist } from '../../store'
-import { layout } from '../../layout'
+import { checklists, hashName, request } from '../../utils/checklists'
+import { layout } from '../../utils/layout'
+import ChecklistMenu from '../ChecklistMenu/ChecklistMenu'
 import IconButton from '../IconButton/IconButton'
 import Page from '../Page/Page'
 import { imageUrl } from '../ImageBlock/ImageBlock'
@@ -35,11 +37,32 @@ const download = (text: string) => {
 }
 
 /**
- * Renders the sticky toolbar, the pages and the drag-and-drop context.
+ * Renders the sticky toolbar, the pages and the drag-and-drop context, or a spinner while a checklist loads.
  */
 export default function App() {
   const st = useChecklist()
   const fileInput = useRef<HTMLInputElement>(null)
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    let latest = 0
+    const open = () => {
+      const id = ++latest, url = checklists[hashName()]
+
+      setLoading(!!url)
+
+      if (!url) return st.load([])
+
+      request(url)
+        .then(json => id === latest && st.load(json))
+        .catch(err => { console.error(err); st.load([]) })
+        .finally(() => id === latest && setLoading(false))
+    }
+
+    open()
+    addEventListener('hashchange', open)
+    return () => removeEventListener('hashchange', open)
+  }, [])
 
   useEffect(() => {
     document.addEventListener('mousedown', blockStrayFocus)
@@ -79,10 +102,19 @@ export default function App() {
     }
   }
 
+  if (loading) {
+    return (
+      <div className="app__loading">
+        <LoaderCircle className="app__spinner" />
+      </div>
+    )
+  }
+
   return (
     <StoreContext value={st}>
       <div className="app">
         <div className="app__toolbar no-print">
+          <ChecklistMenu />
           <IconButton icon={SquarePlus} title="Add section" onClick={st.addSection} />
           <IconButton icon={ImagePlus} title="Add image" onClick={() => fileInput.current?.click()} />
           <IconButton icon={Download} title="Download JSON" onClick={() => download(toJson(st.blocks))} />

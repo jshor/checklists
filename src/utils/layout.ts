@@ -1,4 +1,4 @@
-import type { Band, Block, Fragment, Page, Placed } from './types'
+import type { Band, Block, Fragment, Page, Placed } from '../types'
 
 // sizes come from the global CSS variables defined in styles.scss
 export type Sizes = ReturnType<typeof measure>

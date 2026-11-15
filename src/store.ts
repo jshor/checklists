@@ -1,6 +1,5 @@
 import { createContext, useContext, useState } from 'react'
 import { arrayMove } from '@dnd-kit/sortable'
-import defaults from './checklist.json'
 import type { Block, Item, JsonBlock, Section } from './types'
 
 let nextId = 1
@@ -38,7 +37,7 @@ export const toJson = (blocks: Block[]) => {
 }
 
 export function useChecklist() {
-  const [blocks, setBlocks] = useState(() => fromJson(defaults as JsonBlock[]))
+  const [blocks, setBlocks] = useState<Block[]>([])
   const [footer, setFooter] = useState(['Aircraft', 'For Flight Simulation Only.', 'v1.0'])
   const [focusId, focus] = useState<string | null>(null) // data-focus of an element to focus after render
   const [dragId, setDragId] = useState<number | null>(null)
@@ -64,6 +63,11 @@ export function useChecklist() {
     /** Sets the id of the item being dragged. */
     setDragId,
 
+    /** Replaces the whole checklist. */
+    load: (json: JsonBlock[]) => {
+      return setBlocks(fromJson(json))
+    },
+
     /** Appends an empty section. */
     addSection: () => {
       return setBlocks(bs => {
@@ -79,7 +83,7 @@ export function useChecklist() {
     },
 
     /** Deletes a section or image. */
-    removeSection: (id: number) => {
+    removeBlock: (id: number) => {
       return setBlocks(bs => bs.filter(b => b.id !== id))
     },
 

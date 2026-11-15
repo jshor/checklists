@@ -1,10 +1,17 @@
 import { describe, expect, it } from 'vitest'
 import { act, renderHook } from '@testing-library/react'
-import defaults from './checklist.json'
+import b38m from './checklists/B38M.json'
 import { fromJson, toJson, useChecklist } from './store'
 import type { JsonBlock, Section } from './types'
 
-const setup = () => renderHook(() => useChecklist())
+const defaults = b38m as JsonBlock[]
+
+const setup = () => {
+  const hook = renderHook(() => useChecklist())
+
+  act(() => hook.result.current.load(defaults))
+  return hook
+}
 type Hook = ReturnType<typeof setup>['result']
 
 const sections = (r: Hook) => r.current.blocks.filter(b => b.type === 'section') as Section[]
@@ -13,7 +20,7 @@ const labels = (s: Section) => s.items.map(it => it.label ?? it.note)
 
 describe('fromJson / toJson', () => {
   it('round-trips the default checklist', () => {
-    expect(JSON.parse(toJson(fromJson(defaults as JsonBlock[])))).toEqual(defaults)
+    expect(JSON.parse(toJson(fromJson(defaults)))).toEqual(defaults)
   })
 
   it('reads notes, pairs and images', () => {
@@ -29,7 +36,7 @@ describe('fromJson / toJson', () => {
   })
 
   it('assigns unique ids', () => {
-    const blocks = fromJson(defaults as JsonBlock[])
+    const blocks = fromJson(defaults)
     const ids = blocks.flatMap(b => [b.id, ...(b.type === 'section' ? b.items.map(it => it.id) : [])])
 
     expect(new Set(ids).size).toBe(ids.length)
@@ -37,11 +44,25 @@ describe('fromJson / toJson', () => {
 })
 
 describe('useChecklist', () => {
-  it('starts with the default sections and footer', () => {
+  it('starts empty with the default footer', () => {
+    const { result } = renderHook(() => useChecklist())
+
+    expect(result.current.blocks).toEqual([])
+    expect(result.current.footer).toEqual(['Aircraft', 'For Flight Simulation Only.', 'v1.0'])
+  })
+
+  it('loads a checklist in order', () => {
     const { result } = setup()
 
     expect(titles(result)).toEqual(defaults.map(d => ('title' in d ? d.title : 'IMG')))
-    expect(result.current.footer).toEqual(['Aircraft', 'For Flight Simulation Only.', 'v1.0'])
+  })
+
+  it('loads a checklist', () => {
+    const { result } = setup()
+
+    act(() => result.current.load([{ title: 'ONLY', items: [] }]))
+
+    expect(titles(result)).toEqual(['ONLY'])
   })
 
   it('adds and removes sections', () => {
@@ -53,7 +74,7 @@ describe('useChecklist', () => {
 
     expect(added).toMatchObject({ type: 'section', title: 'SECTION', items: [] })
 
-    act(() => result.current.removeSection(added.id))
+    act(() => result.current.removeBlock(added.id))
 
     expect(result.current.blocks).toHaveLength(count)
   })

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { layout, type Sizes } from './layout'
-import type { Band, Fragment, Img, Placed, Section } from './types'
+import type { Band, Fragment, Img, Placed, Section } from '../types'
 
 const sizes: Sizes = { gap: 10, fullW: 200, colW: 95, pageH: 100, head: 20, row: 10 }
 
