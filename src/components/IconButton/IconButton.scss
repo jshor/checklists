@@ -1,17 +1,18 @@
 .icon-button {
   display: flex;
-  padding: 0;
+  align-items: center;
+  padding: var(--icon-button-padding, 0);
   border: 0;
   background: none;
   color: inherit;
   cursor: pointer;
 
-  &:hover,
-  &[aria-disabled='true'] {
-    opacity: var(--dim);
+  &:hover:not([aria-disabled='true'], .icon-button--bare) {
+    background-color: var(--ink);
   }
 
   &[aria-disabled='true'] {
+    opacity: var(--dim);
     cursor: default;
   }
 

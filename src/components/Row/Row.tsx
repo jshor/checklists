@@ -24,14 +24,14 @@ export default function Row({ sectionId, item }: { sectionId: number; item: Item
   return (
     <div ref={setNodeRef} style={{ transform: CSS.Translate.toString(transform), transition }}
       className={`row ${item.note != null ? 'row--note' : ''} ${isDragging ? 'row--dragging' : ''}`}>
-      <IconButton ref={setActivatorNodeRef} className="row__grip" icon={GripVertical} title="Drag to reorder"
+      <IconButton bare ref={setActivatorNodeRef} className="row__grip" icon={GripVertical} title="Drag to reorder"
         {...attributes} {...listeners} />
       {item.note != null ? edit('note') : <>
         {edit('label', 'row__label')}
         <span className="row__dots" />
         {edit('value', 'row__value')}
       </>}
-      <IconButton className="row__delete" icon={Trash2} title="Delete" onClick={() => st.removeItem(sectionId, item.id)} />
+      <IconButton bare className="row__delete" icon={Trash2} title="Delete" onClick={() => st.removeItem(sectionId, item.id)} />
     </div>
   )
 }

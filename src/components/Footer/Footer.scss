@@ -19,6 +19,14 @@
     text-align: right;
   }
 
+  &__text {
+    border: var(--border-thin) solid transparent;
+
+    &:hover {
+      border-color: var(--muted);
+    }
+  }
+
   @media print {
     &__text:empty {
       visibility: hidden;

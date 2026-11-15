@@ -35,7 +35,8 @@
   & &__delete {
     display: none;
     position: absolute;
-    bottom: var(--space-xs);
+    top: 0;
+    bottom: 0;
   }
 
   &:hover,
@@ -47,17 +48,21 @@
   }
 
   &__grip {
-    left: calc(-1 * (var(--icon-sm) + var(--icon-bridge)));
-    padding-right: var(--icon-bridge);
+    left: calc(-1 * (var(--icon-sm) + var(--space-md) + var(--space-sm)));
+    padding: 0 var(--space-md) 0 var(--space-sm);
     color: var(--muted);
     cursor: grab;
     touch-action: none;
   }
 
   &__delete {
-    right: calc(-1 * (var(--icon-sm) + var(--icon-bridge)));
-    padding-left: var(--icon-bridge);
+    right: calc(-1 * (var(--icon-sm) + var(--space-md) + var(--space-sm)));
+    padding: 0 var(--space-sm) 0 var(--space-md);
     color: var(--danger);
+
+    &:hover {
+      opacity: var(--dim);
+    }
   }
 
   &--note {

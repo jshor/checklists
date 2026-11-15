@@ -19,6 +19,7 @@
     background: var(--header-bg);
     color: var(--header-ink);
     font-weight: bold;
+    --icon-button-padding: 0 var(--space-sm);
     font-size: var(--font-size-head);
   }
 
@@ -33,8 +34,9 @@
 
   &__actions {
     position: absolute;
-    right: var(--space-sm);
+    top: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
-    gap: var(--space-sm);
   }
 }

@@ -25,11 +25,9 @@
   &__head {
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: flex-end;
-    gap: var(--space-sm);
     height: var(--head-h);
-    padding: 0 var(--space-sm);
+    --icon-button-padding: 0 var(--space-sm);
     background: var(--header-bg);
     color: var(--header-ink);
   }
