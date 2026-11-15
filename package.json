@@ -1,14 +1,17 @@
 {
   "name": "checklists",
   "version": "0.0.1",
-  "description": "A UI to generate professional aircraft checklists.",
+  "description": "A simple UI to generate professional aircraft checklists.",
   "license": "MIT",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "test": "vitest run"
+    "test": "vitest run",
+    "coverage": "vitest run --coverage && coverage-badges --style flat --jsonPath total.lines.pct --source dist/coverage/coverage-summary.json --output dist/coverage/badge.svg",
+    "dist": "npm run build && npm run coverage",
+    "changelog": "conventional-changelog -p conventionalcommits -t v -r 0"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
@@ -24,6 +27,10 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.3.0",
+    "@vitest/coverage-v8": "^5.1.0",
+    "conventional-changelog": "^8.1.3",
+    "conventional-changelog-conventionalcommits": "^10.4.1",
+    "coverage-badges-cli": "^2.2.0",
     "jsdom": "^31.0.1",
     "sass": "^1.108.2",
     "typescript": "^7.0.2",

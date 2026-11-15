@@ -1,0 +1,75 @@
+name: Build and Publish
+
+on:
+  push:
+    branches:
+      - main
+  release:
+    types: [created]
+
+env:
+  GIT_USER: 'GitHub Actions'
+  GIT_EMAIL: '41898282+github-actions[bot]@users.noreply.github.com'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 26
+      - name: Install npm dependencies
+        run: yarn
+      # - name: Run linter
+      #   run: yarn lint
+      - name: Build app, run unit tests and generate coverage report and badge
+        run: yarn dist
+      - name: Upload app artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: dist
+          path: dist
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: TriPSs/conventional-changelog-action@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          git-user-name: ${{ env.GIT_USER }}
+          git-user-email: ${{ env.GIT_EMAIL }}
+          preset: 'conventionalcommits'
+          tag-prefix: 'v'
+          release-count: '0'
+          skip-on-empty: false
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Pull latest
+        run: git pull origin main
+      - name: Download bundle artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: dist
+          path: dist
+      - name: Deploy app to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          git-config-name: ${{ env.GIT_USER }}
+          git-config-email: ${{ env.GIT_EMAIL }}
+          branch: gh-pages
+          folder: dist
+          clean: true
