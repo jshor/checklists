@@ -1,6 +1,6 @@
 import { useRef, type ChangeEvent } from 'react'
 import { DndContext, DragOverlay, closestCenter } from '@dnd-kit/core'
-import { Download, FolderOpen, ImagePlus, LoaderCircle, Printer, Redo2, SquarePlus, Undo2 } from 'lucide-react'
+import { FolderOpen, ImagePlus, LoaderCircle, Printer, Redo2, Save, SquarePlus, Undo2 } from 'lucide-react'
 import { DEFAULT_TITLE } from '../../constants'
 import { StoreContext, toJson, useChecklist } from '../../store'
 import { parseChecklist } from '../../utils/checklists'
@@ -74,11 +74,11 @@ export default function App() {
           <div className="app__tools">
             <ChecklistMenu />
             <IconButton icon={FolderOpen} title="Open JSON file" onClick={() => jsonInput.current?.click()} />
+            <IconButton icon={Save} title="Save JSON file" onClick={() => downloadJson(toJson(st), st.title || DEFAULT_TITLE)} />
             <IconButton icon={Undo2} title="Undo" aria-disabled={!st.canUndo} onClick={st.undo} />
             <IconButton icon={Redo2} title="Redo" aria-disabled={!st.canRedo} onClick={st.redo} />
             <IconButton icon={SquarePlus} title="Add section" onClick={st.addSection} />
             <IconButton icon={ImagePlus} title="Add image" onClick={() => imageInput.current?.click()} />
-            <IconButton icon={Download} title="Download JSON" onClick={() => downloadJson(toJson(st), st.title || DEFAULT_TITLE)} />
             <IconButton icon={Printer} title="Print" onClick={() => print()} />
             <input ref={imageInput} type="file" accept="image/*" hidden onChange={addImage} />
             <input ref={jsonInput} type="file" accept=".json,application/json" hidden onChange={openFile} />

@@ -1,0 +1,18 @@
+{
+  "name": "Checklist Generator",
+  "short_name": "Checklist Generator",
+  "description": "Generate professional aircraft checklists.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#cccccc",
+  "theme_color": "#333333",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
