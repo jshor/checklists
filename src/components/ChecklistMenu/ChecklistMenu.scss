@@ -16,6 +16,10 @@
     transform: translateX(-50%);
   }
 
+  &__new {
+    border-bottom: var(--border-thin) solid var(--muted);
+  }
+
   &__item {
     display: block;
     width: 100%;
