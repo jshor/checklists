@@ -1,0 +1,35 @@
+.image-block {
+  position: relative;
+  flex-shrink: 0;
+  background: center / contain no-repeat;
+  cursor: pointer;
+  outline: none;
+
+  &__frame {
+    position: absolute;
+    inset: 0;
+    display: none;
+    box-sizing: border-box;
+    border: var(--border) solid var(--ink);
+  }
+
+  &:hover &__frame,
+  &:focus-within &__frame {
+    display: block;
+  }
+
+  &:focus-within &__frame {
+    border-color: var(--focus);
+  }
+
+  &__head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: var(--head-h);
+    padding: 0 var(--space-sm);
+    background: var(--header-bg);
+    color: var(--header-ink);
+  }
+}

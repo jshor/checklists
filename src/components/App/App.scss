@@ -1,0 +1,15 @@
+.app {
+  &__controls {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    margin: var(--space-lg);
+  }
+
+  &__upload {
+    padding: var(--border-thin) 0.375rem;
+    border: var(--border-thin) solid var(--button-border);
+    background: var(--button-bg);
+    cursor: pointer;
+  }
+}

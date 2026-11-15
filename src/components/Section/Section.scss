@@ -1,0 +1,40 @@
+.section {
+  border: var(--border) solid var(--ink);
+
+  &:has(.section__head:focus-within) {
+    border-color: var(--focus);
+  }
+
+  &--dim {
+    opacity: var(--dim);
+  }
+
+  &__head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    height: var(--head-h);
+    background: var(--header-bg);
+    color: var(--header-ink);
+    font-weight: bold;
+    font-size: var(--font-size-head);
+  }
+
+  &__tools {
+    visibility: hidden;
+  }
+
+  &:hover &__tools,
+  &__head:focus-within &__tools {
+    visibility: visible;
+  }
+
+  &__actions {
+    position: absolute;
+    right: var(--space-sm);
+    display: flex;
+    gap: var(--space-sm);
+  }
+}

@@ -1,0 +1,22 @@
+.icon-button {
+  display: flex;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    opacity: var(--dim);
+  }
+
+  &__icon {
+    width: var(--icon-sm);
+    height: var(--icon-sm);
+  }
+
+  &--large &__icon {
+    width: var(--icon);
+    height: var(--icon);
+  }
+}

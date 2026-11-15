@@ -1,0 +1,25 @@
+@page {
+  size: 8.5in 11in;
+  margin: 0;
+}
+
+@media print {
+  body {
+    background: none;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
+
+* {
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+body {
+  margin: 0;
+  background: var(--desk);
+  font: var(--font-size) var(--font);
+}
