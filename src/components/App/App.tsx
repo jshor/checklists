@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState, type ChangeEvent } from 'react'
 import { DndContext, DragOverlay, closestCenter } from '@dnd-kit/core'
-import { Download, ImagePlus, LoaderCircle, Redo2, SquarePlus, Undo2 } from 'lucide-react'
+import { Download, FolderOpen, ImagePlus, LoaderCircle, Redo2, SquarePlus, Undo2 } from 'lucide-react'
 import { DEFAULT_TITLE } from '../../constants'
 import { StoreContext, toJson, useChecklist } from '../../store'
-import { checklists, hashName, request } from '../../utils/checklists'
+import { checklists, hashName, parseChecklist, request } from '../../utils/checklists'
 import { layout } from '../../utils/layout'
 import ChecklistMenu from '../ChecklistMenu/ChecklistMenu'
 import Edit from '../Edit/Edit'
@@ -27,13 +27,13 @@ const blockStrayFocus = (e: MouseEvent) => {
 }
 
 /**
- * Downloads text as checklist.json.
+ * Downloads JSON text as "<name>.json", replacing characters not allowed in file names.
  */
-const download = (text: string) => {
+const download = (text: string, name: string) => {
   const a = document.createElement('a')
-  
+
   a.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }))
-  a.download = 'checklist.json'
+  a.download = `${name.replace(/[\\/:*?"<>|]/g, '-')}.json`
   a.click()
   URL.revokeObjectURL(a.href)
 }
@@ -43,20 +43,22 @@ const download = (text: string) => {
  */
 export default function App() {
   const st = useChecklist()
-  const fileInput = useRef<HTMLInputElement>(null)
+  const imageInput = useRef<HTMLInputElement>(null)
+  const jsonInput = useRef<HTMLInputElement>(null)
   const [loading, setLoading] = useState(false)
   const dirty = useRef(st.dirty)
+  const shownHash = useRef(location.hash)
 
   dirty.current = st.dirty
 
   useEffect(() => {
-    let latest = 0, shownHash = location.hash
+    let latest = 0
     const open = () => {
       if (latest && dirty.current && !confirm('Discard unsaved changes?')) {
-        return history.replaceState(null, '', shownHash || location.pathname + location.search)
+        return history.replaceState(null, '', shownHash.current || location.pathname + location.search)
       }
 
-      shownHash = location.hash
+      shownHash.current = location.hash
 
       const id = ++latest, url = checklists[hashName()]
 
@@ -108,6 +110,27 @@ export default function App() {
 
   }, [st.focusId])
 
+  // load a checklist from a local JSON file
+  const openFile = async (e: ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+
+    e.target.value = ''
+
+    if (!file || (st.dirty && !confirm('Discard unsaved changes?'))) return
+
+    try {
+      st.load(parseChecklist(await file.text()))
+
+      // clear the hash since it no longer names the document
+      if (location.hash) {
+        history.pushState(null, '', location.pathname + location.search)
+      }
+      shownHash.current = ''
+    } catch (err) {
+      alert(`Could not open ${file.name}: ${(err as Error).message}`)
+    }
+  }
+
   const addImage = (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
 
@@ -147,12 +170,14 @@ export default function App() {
           </h1>
           <div className="app__tools">
             <ChecklistMenu />
+            <IconButton icon={FolderOpen} title="Open JSON file" onClick={() => jsonInput.current?.click()} />
             <IconButton icon={Undo2} title="Undo" aria-disabled={!st.canUndo} onClick={st.undo} />
             <IconButton icon={Redo2} title="Redo" aria-disabled={!st.canRedo} onClick={st.redo} />
             <IconButton icon={SquarePlus} title="Add section" onClick={st.addSection} />
-            <IconButton icon={ImagePlus} title="Add image" onClick={() => fileInput.current?.click()} />
-            <IconButton icon={Download} title="Download JSON" onClick={() => download(toJson(st))} />
-            <input ref={fileInput} type="file" accept="image/*" hidden onChange={addImage} />
+            <IconButton icon={ImagePlus} title="Add image" onClick={() => imageInput.current?.click()} />
+            <IconButton icon={Download} title="Download JSON" onClick={() => download(toJson(st), st.title || DEFAULT_TITLE)} />
+            <input ref={imageInput} type="file" accept="image/*" hidden onChange={addImage} />
+            <input ref={jsonInput} type="file" accept=".json,application/json" hidden onChange={openFile} />
           </div>
         </div>
 

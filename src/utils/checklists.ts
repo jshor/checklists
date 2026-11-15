@@ -29,3 +29,15 @@ export const request = (url: string) => {
     xhr.send()
   })
 }
+
+/**
+ * Returns the checklist in a JSON file's text.
+ */
+export const parseChecklist = (text: string): JsonChecklist => {
+  const json = JSON.parse(text)
+  const checklist = Array.isArray(json) ? { blocks: json } : json
+
+  if (!Array.isArray(checklist?.blocks)) throw new Error('not a checklist file')
+
+  return checklist
+}
