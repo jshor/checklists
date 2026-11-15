@@ -1,4 +1,5 @@
-## 0.0.1 (2026-11-15)
+## 0.1.0 (2026-11-15)
+
 
 ### Features
 
@@ -13,7 +14,9 @@
 * **svg:** preserves SVG markup for maintainability ([f389e43](https://github.com/jshor/checklists/commit/f389e43061c7c321507fd045f6a27a47dae74bb4))
 * **undo:** adds undo/redo ([13fa43c](https://github.com/jshor/checklists/commit/13fa43c363b1b5322101f5510fdc5b98b5638db3))
 
+
 ### Bug Fixes
 
 * scrolls and focuses new sections into view when added ([a9cdc31](https://github.com/jshor/checklists/commit/a9cdc3117dafed7198de436499cedaa7ddb79447))
 * **text:** deselects text once editable content is blurred ([682a154](https://github.com/jshor/checklists/commit/682a1547307b528f8be4c1dc4f9139eadb1ff02b))
+
