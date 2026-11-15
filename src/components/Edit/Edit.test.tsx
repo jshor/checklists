@@ -88,6 +88,27 @@ describe('Edit', () => {
     expect(el.textContent).toBe('Page 2')
   })
 
+  it('clears a selection inside it on blur', () => {
+    const { el } = setup()
+
+    getSelection()!.selectAllChildren(el)
+    fireEvent.blur(el)
+
+    expect(getSelection()!.rangeCount).toBe(0)
+  })
+
+  it('keeps a selection elsewhere on blur', () => {
+    const { el } = setup()
+    const other = document.body.appendChild(document.createElement('p'))
+
+    other.textContent = 'other'
+    getSelection()!.selectAllChildren(other)
+    fireEvent.blur(el)
+
+    expect(getSelection()!.toString()).toBe('other')
+    other.remove()
+  })
+
   it('leaves arrow keys alone without onArrow', () => {
     const { el } = setup()
 

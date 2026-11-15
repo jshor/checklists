@@ -41,10 +41,15 @@ export default function Edit({ value, display, onChange, onEnter, onArrow, focus
         const el = e.currentTarget
 
         setFocused(true)
-        requestAnimationFrame(() => getSelection()?.selectAllChildren(el))
+        requestAnimationFrame(() => document.activeElement === el && getSelection()?.selectAllChildren(el))
       }}
       onBlur={e => {
-        commit(e.currentTarget)
+        const el = e.currentTarget, selection = getSelection()
+
+        // the stray-click guard cancels the mousedown that would normally clear the selection
+        if (selection?.anchorNode && el.contains(selection.anchorNode)) selection.removeAllRanges()
+
+        commit(el)
         setFocused(false)
       }}>
       {focused || display == null ? value : display}
