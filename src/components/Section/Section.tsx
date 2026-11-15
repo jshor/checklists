@@ -31,7 +31,7 @@ export default function Section({ s, items, cont, last }: Fragment) {
             <IconButton large icon={ListPlus} title="Add line" onClick={() => append(false)} />
             <IconButton large icon={MessageSquarePlus} title="Add note" onClick={() => append(true)} />
             <IconButton large icon={Trash2} title="Delete section"
-              onClick={() => confirm(`Delete section "${s.title}"?`) && st.removeSection(s.id)} />
+              onClick={() => confirm(`Delete section "${s.title}"?`) && st.removeBlock(s.id)} />
           </span>
         )}
       </div>

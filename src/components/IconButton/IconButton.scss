@@ -11,12 +11,11 @@
   }
 
   &__icon {
-    width: var(--icon-sm);
-    height: var(--icon-sm);
+    width: var(--icon-button-size, var(--icon-sm));
+    height: var(--icon-button-size, var(--icon-sm));
   }
 
-  &--large &__icon {
-    width: var(--icon);
-    height: var(--icon);
+  &--large {
+    --icon-button-size: var(--icon);
   }
 }

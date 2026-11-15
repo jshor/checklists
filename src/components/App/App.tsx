@@ -1,8 +1,11 @@
-import { useEffect, type ChangeEvent } from 'react'
+import { useEffect, useRef, type ChangeEvent } from 'react'
 import { DndContext, DragOverlay, closestCenter } from '@dnd-kit/core'
+import { Download, ImagePlus, SquarePlus } from 'lucide-react'
 import { StoreContext, toJson, useChecklist } from '../../store'
 import { layout } from '../../layout'
+import IconButton from '../IconButton/IconButton'
 import Page from '../Page/Page'
+import { imageUrl } from '../ImageBlock/ImageBlock'
 import { RowGhost } from '../Row/Row'
 import './App.scss'
 
@@ -32,10 +35,11 @@ const download = (text: string) => {
 }
 
 /**
- * Renders the pages, drag-and-drop context and the add/download controls.
+ * Renders the sticky toolbar, the pages and the drag-and-drop context.
  */
 export default function App() {
   const st = useChecklist()
+  const fileInput = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     document.addEventListener('mousedown', blockStrayFocus)
@@ -65,14 +69,26 @@ export default function App() {
     reader.onload = () => {
       const src = reader.result as string, im = new Image()
       im.onload = () => st.addImage(src, im.height / im.width)
-      im.src = src
+      im.src = imageUrl(src)
     }
-    reader.readAsDataURL(file)
+
+    if (file.type === 'image/svg+xml') {
+      reader.readAsText(file) // keep SVG markup as-is
+    } else {
+      reader.readAsDataURL(file) // render as base64 data URL
+    }
   }
 
   return (
     <StoreContext value={st}>
       <div className="app">
+        <div className="app__toolbar no-print">
+          <IconButton icon={SquarePlus} title="Add section" onClick={st.addSection} />
+          <IconButton icon={ImagePlus} title="Add image" onClick={() => fileInput.current?.click()} />
+          <IconButton icon={Download} title="Download JSON" onClick={() => download(toJson(st.blocks))} />
+          <input ref={fileInput} type="file" accept="image/*" hidden onChange={addImage} />
+        </div>
+
         <DndContext collisionDetection={closestCenter}
           onDragStart={e => st.setDragId(e.active.id as number)}
           onDragEnd={({ active, over }) => { st.setDragId(null); if (over) st.sortItems(active.id as number, over.id as number) }}
@@ -81,12 +97,6 @@ export default function App() {
           {/* The ghost lives in an overlay so it stays visible across columns and pages. */}
           <DragOverlay>{st.dragItem && <RowGhost item={st.dragItem} />}</DragOverlay>
         </DndContext>
-        
-        <div className="app__controls no-print">
-          <button onClick={st.addSection}>+ Add section</button>
-          <label className="app__upload">+ Add image<input type="file" accept="image/*" hidden onChange={addImage} /></label>
-          <button onClick={() => download(toJson(st.blocks))}>Download JSON</button>
-        </div>
       </div>
     </StoreContext>
   )

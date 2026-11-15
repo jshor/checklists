@@ -28,7 +28,7 @@ export type Img = {
   id: number
   /** Discriminates images from sections. */
   type: 'image'
-  /** Base64 data URL. */
+  /** SVG markup or a base64 data URL for other image types. */
   src: string
   /** Height divided by width. */
   ratio: number
@@ -79,7 +79,7 @@ export type JsonBlock =
     items: (string | string[])[]
   }
   | {
-    /** Base64 data URL. */
+    /** SVG markup, or a base64 data URL for other image types. */
     image: string
     /** Height divided by width. */
     ratio: number

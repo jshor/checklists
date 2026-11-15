@@ -31,7 +31,6 @@
     border-bottom: var(--border) dotted var(--ink);
   }
 
-  // "& &__" doubles the specificity so it beats .icon-button's display.
   & &__grip,
   & &__delete {
     display: none;
